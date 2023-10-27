@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap");
 
 /*   CSS GENERICI   */
 
@@ -42,10 +42,7 @@ body {
 	font-family: "Montserrat", sans-serif;
 	font-size: 100%;
 	color: #000;
-	background: #fff;
-}
-article {
-	margin-top: -78px;
+	background: #f5f3ef;
 }
 hr {
 	border: 0px;
@@ -192,6 +189,10 @@ header {
 		background: url(../img/arrow-down.png) right 38% no-repeat;
 		padding-right: 11px;
 	}
+
+	article {
+		margin-top: -78px;
+	}
 }
 
 /*  CSS GRIGLIA    */
@@ -293,7 +294,7 @@ p a:hover {
 /*  GESTIONE FONT   */
 
 h1 {
-	font-size: 3.93em;
+	font-size: 4em;
 	font-weight: 700;
 	padding: 0 0 0px 0;
 	color: #fff;
@@ -301,7 +302,7 @@ h1 {
 	line-height: 1.2em;
 }
 h2 {
-	font-size: 5rem;
+	font-size: 4rem;
 	font-weight: 700;
 	padding: 0 0 0px 0;
 	color: #5fa62a;
@@ -343,7 +344,7 @@ h6 {
 	line-height: 1.2em;
 }
 p {
-	font-size: 1em;
+	font-size: 1.125em;
 	font-family: "Montserrat", sans-serif;
 	font-weight: 400;
 	line-height: 1.35em;
@@ -543,17 +544,6 @@ textarea {
 }
 
 /* CUSTOM */
-
-.slider {
-	width: 100%;
-	height: 800px;
-	background: url(../img/abete-pepito.png);
-}
-footer {
-	padding-block: 100px;
-	background-color: #f5f3ef;
-}
-
 @media screen and (max-width: 1480px) {
 	header nav ul li a {
 		margin: 0 5px;
@@ -595,6 +585,12 @@ footer {
 	}
 	h1 {
 		font-size: 2.6em;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	h2 {
+		font-size: 2em;
 	}
 }
 
@@ -784,7 +780,17 @@ footer {
 	font-size: 2.25rem;
 	font-weight: bolder;
 	text-transform: uppercase;
-	margin-bottom: 3rem;
+	margin-block: 1.5rem;
+}
+
+@media screen and (max-width: 600px) {
+	.titolo-sezione {
+		font-size: 1.8rem;
+	}
+}
+
+.first-section {
+	margin-top: 100px;
 }
 
 .bordered {
@@ -803,22 +809,329 @@ footer {
 	display: table;
 }
 
-.btn-freccia:hover {
-	color: #e2001a;
-	border: 1px solid #e2001a;
+.btn {
+	display: inline-block;
+	color: #000;
+	border: 1px solid #000;
+	padding: 15px 40px 15px 40px;
+	margin-block: 50px;
+	border-radius: 25px;
 }
 
-/** HOME **/
-.sect-enplus {
-	background: url("../img/enplus.png");
-	padding-block: 100px;
+.btn-white {
+	display: inline-block;
+	color: #000;
+	font-weight: 700;
+	padding: 20px 80px 20px 40px;
+	border-radius: 30px;
+	background-color: #fff;
 }
 
-.sect-enplus h2 {
+.btn-phone {
+	background: url("../img/phone-ico.jpg") no-repeat #fff;
+	background-position-y: center;
+	background-position-x: 95%;
+	background-size: 40px;
+}
+
+.btn-mail {
+	background: url("../img/mail-ico.jpg") no-repeat #fff;
+	background-position-y: center;
+	background-position-x: 95%;
+	background-size: 40px;
+}
+
+.text-black {
+	color: #000;
+}
+
+.text-white {
 	color: #fff;
 }
 
+.text-bolder {
+	font-weight: 900;
+}
+
+.text-bold {
+	font-weight: 700;
+}
+
+.fs-48px {
+	font-size: 3rem;
+}
+
+/** HOME **/
+.mio-slider {
+	width: 100%;
+	height: 800px;
+	background: radial-gradient(127.53% 127.53% at 18.77% -30.77%, #fff 0%, #fff 32.81%, #0e4e07 100%), url("../img/abete-pepito.png");
+	background-blend-mode: multiply;
+	padding: 250px 0 0 0;
+}
+
+.slider-box-testo {
+	padding-top: 100px;
+}
+
+.btn-container a {
+	width: 250px;
+	margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+	.mio-slider {
+		padding: 25px 0 0 0;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.mio-slider {
+		padding: 25px 0 0 0;
+		margin-bottom: 100px;
+	}
+}
+
+.slider-box-img {
+	text-align: center;
+}
+
+.sect-catalogo {
+	padding-block: 100px;
+	background: #fff;
+}
+
+.sect-prodotti {
+	background-color: #f5f3ef;
+	padding-block: 100px;
+}
+
+.sect-prod-distr {
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/produzione-distribuzione.png");
+	background-position: bottom;
+	padding: 350px 0 50px 0;
+	overflow: hidden;
+}
+
+.sect-lett-cipp {
+	padding-block: 100px;
+	background: #fff;
+}
+
+.sect-enplus {
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/enplus.png");
+	padding-block: 200px;
+	overflow: hidden;
+}
+
+.card-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-top: 100px;
+}
+
+.mini-card-container {
+	display: flex;
+	gap: 20px;
+	margin-top: 100px;
+}
+
+.card {
+	height: 700px;
+	width: 600px;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	border-radius: 40px;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+	margin-bottom: 50px;
+}
+
+.card-text {
+	text-align: center;
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+	border-radius: 0 0 40px 40px;
+}
+
+.card-title {
+	font-size: 2.25rem;
+	letter-spacing: 2.7px;
+	font-weight: 700;
+	color: #fff;
+	text-transform: uppercase;
+	margin-bottom: 0;
+}
+
+.card-desc {
+	font-size: 1.125rem;
+	font-weight: 400;
+	line-height: 28px;
+	letter-spacing: 1.35px;
+	color: #fff;
+	margin: 0 0 18px 0;
+}
+
+@media screen and (max-width: 600px) {
+	.card-title {
+		font-size: 1.8rem;
+	}
+
+	.card-desc {
+		font-size: 1rem;
+	}
+}
+
+.card-button {
+	display: inline-block;
+	color: #fff;
+	border: 1px solid #fff;
+	padding: 15px 30px 15px 30px;
+	border-radius: 25px;
+	margin-bottom: 15px;
+}
+
+.card-lettiere {
+	background: url("../img/lettiere-animali.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.card-cippato {
+	background: url("../img/cippato-legno.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.mini-card {
+	width: 300px;
+	background-color: #fff;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	border-radius: 22px;
+}
+
+.mini-card-img {
+	height: 300px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.mini-card-img img {
+	height: 300px;
+}
+
+.mini-card-text {
+	text-align: left;
+	padding-inline: 20px;
+	background-color: #e6e2da;
+	border-radius: 0 0 22px 22px;
+}
+
+.mini-card-title {
+	font-size: 1.5rem;
+	font-weight: 700;
+	line-height: 36px;
+	letter-spacing: 2.769px;
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+
+.mini-card-desc {
+	font-size: 1.25rem;
+	font-weight: 400;
+	line-height: 28px;
+	letter-spacing: 1.5px;
+	margin-top: 0;
+}
+
+/** PRODOTTI **/
+
+.mini-card-container-prodotti {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 100px;
+	margin-top: 100px;
+	justify-content: center;
+}
+
+.sect-produzione {
+	margin-top: 200px;
+	background: #fff;
+	border-radius: 44px;
+}
+
+.sect-produzione__text {
+	padding: 50px 50px;
+}
+
+.sect-produzione__text h1 {
+	margin-bottom: 60px;
+}
+
+.sect-produzione__img {
+	padding: 0;
+	border-radius: 0 44px 44px 0;
+	overflow: hidden;
+}
+
+@media screen and (max-width: 900px) {
+	.sect-produzione__img {
+		border-radius: 0 0 44px 44px;
+	}
+}
+
+/** PRODOTTO SINGOLO **/
+.box-img-prodotto {
+	text-align: center;
+}
+
+.box-img-prodotto img {
+	border-radius: 22px;
+}
+
+.box-desc-prodotto h1 {
+	font-size: 2.25rem;
+	font-weight: bolder;
+	text-transform: uppercase;
+	margin-block: 1.5rem;
+}
+
+.box-desc-prodotto img {
+	margin-block: 30px;
+}
+
+.prodotto-proprieta {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+	padding-block: 10px;
+	margin: 0;
+}
+
+.prodotto-nome-proprieta {
+	margin-right: 20px;
+	font-weight: 700;
+}
+
+.prodotto-download {
+	margin-top: 20px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 50px;
+}
+
+.prodotto-download img {
+	height: 50px;
+}
+
 /** FOOTER **/
+footer {
+	padding-block: 100px;
+	background-color: #f5f3ef;
+}
 
 .footer__certificazioni {
 	width: 100%;
@@ -832,7 +1145,7 @@ footer {
 	width: 278px;
 	height: 278px;
 	background-color: #fff;
-	border-radius: 5px;
+	border-radius: 22px;
 	text-align: center;
 	padding: 50px;
 }
