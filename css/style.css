@@ -862,12 +862,23 @@ textarea {
 }
 
 /** HOME **/
-.mio-slider {
+.slide {
 	width: 100%;
 	height: 800px;
-	background: radial-gradient(127.53% 127.53% at 18.77% -30.77%, #fff 0%, #fff 32.81%, #0e4e07 100%), url("../img/abete-pepito.png");
-	background-blend-mode: multiply;
 	padding: 250px 0 0 0;
+	background-blend-mode: multiply;
+}
+
+.slide-1 {
+	background: radial-gradient(127.53% 127.53% at 18.77% -30.77%, #fff 0%, #fff 32.81%, #0e4e07 100%), url("../img/abete-pepito.png");
+}
+
+.slide-2 {
+	background: radial-gradient(127.53% 127.53% at 18.77% -30.77%, #fff 0%, #fff 32.81%, #0e4e07 100%), url("../img/bosco.png");
+}
+
+.slide-3 {
+	background: radial-gradient(127.53% 127.53% at 18.77% -30.77%, #fff 0%, #fff 35.84%, #240a0a 100%), url("../img/tronchi.png");
 }
 
 .slider-box-testo {
@@ -879,21 +890,25 @@ textarea {
 	margin-bottom: 20px;
 }
 
+.slider-box-img {
+	text-align: center;
+}
+
 @media screen and (max-width: 1200px) {
-	.mio-slider {
-		padding: 25px 0 0 0;
+	.slide {
+		padding: 0;
 	}
 }
 
 @media screen and (max-width: 600px) {
-	.mio-slider {
-		padding: 25px 0 0 0;
+	.home-slider {
+		padding: 0;
 		margin-bottom: 100px;
 	}
-}
 
-.slider-box-img {
-	text-align: center;
+	.slider-box-testo {
+		padding-top: 20px;
+	}
 }
 
 .sect-catalogo {
@@ -1159,5 +1174,29 @@ footer {
 @media screen and (max-width: 960px) {
 	.footer__certificazioni {
 		justify-content: center;
+	}
+}
+
+.slick-list {
+	width: 100%;
+	transform: translate3d(0, -78px, 0) !important;
+}
+
+.slick-slide img {
+	width: auto;
+	display: inline;
+}
+
+.slick-dotted.slick-slider {
+	margin-bottom: 0;
+}
+
+.slick-dots {
+	bottom: 10px;
+}
+
+@media screen and (max-width: 1251px) {
+	.slick-list {
+		transform: translate3d(0, 0, 0) !important;
 	}
 }

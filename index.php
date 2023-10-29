@@ -93,11 +93,6 @@ include_once("dati-seo.php");
 
 
     <link rel="icon" href="<?= $URLASSOLUTO ?>favicon.png" type="image/x-icon" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script src="<?= $URLASSOLUTO ?>js/common.js" type="text/javascript" charset="utf-8"></script>
-    <script src="<?= $URLASSOLUTO ?>js/wow.js" type="text/javascript" charset="utf-8"></script>
-    <script src="<?= $URLASSOLUTO ?>js/simple-lightbox.js" type="text/javascript" charset="utf-8"></script>
-    <script src="<?= $URLASSOLUTO ?>js/slick.js" type="text/javascript" charset="utf-8"></script>
     <link rel="stylesheet" type="text/css" href="<?= $URLASSOLUTO ?>css/slick.css">
     <link rel="stylesheet" type="text/css" href="<?= $URLASSOLUTO ?>css/slick-theme.css">
     <link rel="stylesheet" type="text/css" href="<?= $URLASSOLUTO ?>css/simplelightbox.css">
@@ -142,7 +137,11 @@ include_once("dati-seo.php");
     include_once("modules/footer.php");
     ?>
 
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="<?= $URLASSOLUTO ?>js/slick.js" type="text/javascript" charset="utf-8"></script>
+    <script src="<?= $URLASSOLUTO ?>js/common.js" type="text/javascript" charset="utf-8"></script>
+    <script src="<?= $URLASSOLUTO ?>js/wow.js" type="text/javascript" charset="utf-8"></script>
+    <script src="<?= $URLASSOLUTO ?>js/simple-lightbox.js" type="text/javascript" charset="utf-8"></script>
 </body>
 
 </html>
