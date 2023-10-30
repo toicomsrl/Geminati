@@ -70,7 +70,7 @@ $(function () {
 
 $(document).on("ready", function () {
 	$(".slider").slick({
-		dots: true,
+		dots: false,
 		infinite: true,
 		arrows: false,
 		autoplay: true,
@@ -99,14 +99,14 @@ $(document).on("ready", function () {
 	})
 
 	$(".carusel").slick({
-		dots: true,
+		dots: false,
 		infinite: true,
 		arrows: false,
 		autoplay: true,
 		autoplaySpeed: 3500,
 		speed: 1500,
-		slidesToShow: 3,
-		slidesToScroll: 3,
+		slidesToShow: 4,
+		slidesToScroll: 1,
 		responsive: [
 			{
 				breakpoint: 1000,
@@ -160,7 +160,7 @@ window.onscroll = function () {
 }
 
 function scrollFunction() {
-	if (document.documentElement.scrollTop > 50) {
+	if (document.documentElement.scrollTop > 1) {
 		document.querySelector(".header").style.background = "#f5f3ef"
 
 		const menuItems = document.querySelectorAll(".menu-item")
@@ -168,10 +168,15 @@ function scrollFunction() {
 			element.style.color = "#000"
 		})
 	} else {
+		const hiddenPElement = document.querySelector(".nontivedo")
 		document.querySelector(".header").style.background = "transparent"
-		const menuItems = document.querySelectorAll(".menu-item")
-		menuItems.forEach((element) => {
-			element.style.color = "#FFF"
-		})
+
+		if (!hiddenPElement) {
+			console.log("Sono entrato")
+			const menuItems = document.querySelectorAll(".menu-item")
+			menuItems.forEach((element) => {
+				element.style.color = "#FFF"
+			})
+		}
 	}
 }

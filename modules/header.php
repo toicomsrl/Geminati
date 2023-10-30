@@ -20,10 +20,10 @@ if ($modulo == 'prodotti' || $fold == 'schede-prodotti') {
         </div>
         <ul id="nav-mobile">
             <li><a href="<?= $URLASSOLUTO ?>" class="menu-item <?php echo $class; ?>">HOME</a></li>
-            <li><a href="<?= $URLASSOLUTO ?>prodotti/" class="menu-item <?php echo $class; ?>">PRODOTTI</a></li>
-            <li><a href="<?= $URLASSOLUTO ?>certificazioni/" class="menu-item <?php echo $class; ?>">CERTIFICAZIONI</a></li>
-            <li><a href="<?= $URLASSOLUTO ?>azienda/" class="menu-item <?php echo $class; ?>">AZIENDA</a></li>
-            <li><a href="<?= $URLASSOLUTO ?>contatti/" class="menu-item <?php echo $class; ?>">CONTATTI</a></li>
+            <li><a href="<?= $URLASSOLUTO ?>prodotti.html" class="menu-item <?php echo $class; ?>">PRODOTTI</a></li>
+            <li><a href="<?= $URLASSOLUTO ?>certificazioni.html" class="menu-item <?php echo $class; ?>">CERTIFICAZIONI</a></li>
+            <li><a href="<?= $URLASSOLUTO ?>azienda.html" class="menu-item <?php echo $class; ?>">AZIENDA</a></li>
+            <li><a href="<?= $URLASSOLUTO ?>contatti.html" class="menu-item <?php echo $class; ?>">CONTATTI</a></li>
         </ul>
         <div class="pulizia"></div>
     </nav>
