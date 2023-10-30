@@ -9,12 +9,9 @@
             <div class="box-dueterzi sect-produzione__img">
                 <img src="<?= $URLASSOLUTO ?>img/FIREX-AMBIENTE.jpg" alt="" srcset="">
             </div>
-            <div class="pulizia"></div>
-
         </div>
-        <div class="pulizia"></div>
     </section>
-
+    <div class="pulizia"></div>
     <section class="sect-prodotti">
         <div class="contenitore">
             <p class="titolo-sezione">Catalogo prodotti</p>

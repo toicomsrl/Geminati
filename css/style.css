@@ -1075,7 +1075,7 @@ textarea {
 	flex-wrap: wrap;
 	gap: 100px;
 	margin-top: 100px;
-	justify-content: center;
+	justify-content: left;
 }
 
 .sect-produzione {
@@ -1101,6 +1101,11 @@ textarea {
 @media screen and (max-width: 900px) {
 	.sect-produzione__img {
 		border-radius: 0 0 44px 44px;
+	}
+
+	.mini-card-container-prodotti {
+		justify-content: center;
+		gap: 50px;
 	}
 }
 
@@ -1147,10 +1152,26 @@ textarea {
 	height: 50px;
 }
 
+@media screen and (max-width: 900px) {
+	.prodotto-download {
+		justify-content: center;
+		gap: 0;
+		margin-bottom: 50px;
+	}
+
+	.box-desc-prodotto img {
+		margin-block: 10px;
+	}
+}
+
 /** FOOTER **/
 footer {
 	padding-block: 100px;
 	background-color: #f5f3ef;
+}
+
+.footer-row-1 {
+	margin-bottom: 50px;
 }
 
 .footer__certificazioni {

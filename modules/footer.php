@@ -1,5 +1,5 @@
 <footer>
-    <div class="contenitore">
+    <div class="contenitore footer-row-1">
         <p class="titolo-sezione">Certificazioni e associazioni</p>
         <div class="footer__certificazioni">
             <div class="box-img-certificazioni">
@@ -18,6 +18,8 @@
                 <img src="<?= $URLASSOLUTO; ?>/img/Enawa.png" alt="">
             </div>
         </div>
+    </div>
+    <div class="contenitore footer-row-2">
         <div class="box-terzo">
             <p class="titolo-sezione">Contattaci</p>
             <p>
