@@ -1,24 +1,30 @@
 <footer>
-    <div class="contenitore footer-row-1">
-        <p class="titolo-sezione">Certificazioni e associazioni</p>
-        <div class="footer__certificazioni">
-            <div class="box-img-certificazioni">
-                <img src="<?= $URLASSOLUTO; ?>img/En_plus_IT_344.png" alt="">
-            </div>
-            <div class="box-img-certificazioni">
-                <img src="<?= $URLASSOLUTO; ?>img/En_plus_IT_011.png" alt="">
-            </div>
-            <div class="box-img-certificazioni">
-                <img src="<?= $URLASSOLUTO; ?>img/Aiel_2.png" alt="">
-            </div>
-            <div class="box-img-certificazioni">
-                <img src="<?= $URLASSOLUTO; ?>/img/Aiel.png" alt="">
-            </div>
-            <div class="box-img-certificazioni">
-                <img src="<?= $URLASSOLUTO; ?>/img/Enawa.png" alt="">
+
+    <?php if ($modulo != "certificazioni") { ?>
+
+        <div class="contenitore footer-row-1">
+            <p class="titolo-sezione">Certificazioni e associazioni</p>
+            <div class="row__certificazioni">
+                <div class="box-img-certificazioni">
+                    <img src="<?= $URLASSOLUTO; ?>img/En_plus_IT_344.png" alt="">
+                </div>
+                <div class="box-img-certificazioni">
+                    <img src="<?= $URLASSOLUTO; ?>img/En_plus_IT_011.png" alt="">
+                </div>
+                <div class="box-img-certificazioni">
+                    <img src="<?= $URLASSOLUTO; ?>img/Aiel_2.png" alt="">
+                </div>
+                <div class="box-img-certificazioni">
+                    <img src="<?= $URLASSOLUTO; ?>/img/Aiel.png" alt="">
+                </div>
+                <div class="box-img-certificazioni">
+                    <img src="<?= $URLASSOLUTO; ?>/img/Enawa.png" alt="">
+                </div>
             </div>
         </div>
-    </div>
+
+    <?php } ?>
+
     <div class="contenitore footer-row-2">
         <div class="box-terzo">
             <p class="titolo-sezione">Contattaci</p>

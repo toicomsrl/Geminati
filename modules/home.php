@@ -46,13 +46,13 @@
             </div>
         </div>
     </div>
-    <section class="sect-catalogo">
+    <section class="bg-white">
         <div class="contenitore">
             <div class="box-mezzo sect-catalogo__col-1">
                 <p>
                     Forniamo pellet di legno di alta qualità per le principali catene GDO in Italia e per tutte le aziende che cercano un partner affidabile, costante e preciso. Grazie alla nostra produzione diretta, e l’infrastruttura logistica siamo in grado di garantire il prodotto tutto l’anno.
                 </p>
-                <a href="<?= $URLASSOLUTO ?>prodotti/" class=" btn">CATALOGO</a>
+                <a href="<?= $URLASSOLUTO ?>prodotti.html" class=" btn">CATALOGO</a>
             </div>
 
             <div class="box-mezzo">

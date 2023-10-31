@@ -172,11 +172,30 @@ function scrollFunction() {
 		document.querySelector(".header").style.background = "transparent"
 
 		if (!hiddenPElement) {
-			console.log("Sono entrato")
 			const menuItems = document.querySelectorAll(".menu-item")
 			menuItems.forEach((element) => {
 				element.style.color = "#FFF"
+				element.style.color.hover
 			})
 		}
 	}
 }
+
+//Hover sugli elementi del menù
+var vociMenu = document.querySelectorAll(".menu-item")
+vociMenu.forEach((element) => {
+	element.addEventListener("mouseover", function () {
+		this.style.color = "#c00a05"
+	})
+	element.addEventListener("mouseout", function () {
+		if (document.documentElement.scrollTop > 1) {
+			this.style.color = "#000"
+		} else {
+			if (!document.querySelector(".nontivedo")) {
+				this.style.color = "#FFF"
+			} else {
+				this.style.color = "#000"
+			}
+		}
+	})
+})

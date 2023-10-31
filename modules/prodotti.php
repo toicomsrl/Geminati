@@ -1,25 +1,25 @@
 <p class="nontivedo"></p>
 <article>
-    <section>
-        <div class="contenitore sect-produzione">
-            <div class="box-terzo sect-produzione__text">
+    <section class="first-section">
+        <div class="contenitore box-img">
+            <div class="box-terzo box-img__text">
                 <h1 class="text-black">Produzione pellet di legno</h1>
                 <p>l nostro pellet è prodotto e confezionato internamente, gestendo l'intero ciclo produttivo dalla raccolta delle materie prime alla lavorazione, confezionamento e stoccaggio. Grazie al controllo completo del processo, garantiamo qualità e puntualità nella fornitura dei prodotti. </p>
             </div>
-            <div class="box-dueterzi sect-produzione__img">
+            <div class="box-dueterzi box-img__img">
                 <img src="<?= $URLASSOLUTO ?>img/FIREX-AMBIENTE.jpg" alt="" srcset="">
             </div>
+            <div class="pulizia"></div>
         </div>
     </section>
-    <div class="pulizia"></div>
-    <section class="sect-prodotti">
+
+    <section>
         <div class="contenitore">
             <p class="titolo-sezione">Catalogo prodotti</p>
-
             <div class="mini-card-container-prodotti">
                 <a href="<?= $URLASSOLUTO ?>schede-prodotti/pepito.html">
-                    <div class="mini-card">
-                        <div class="mini-card-img">
+                    <div class="mini-card-big">
+                        <div class="mini-card-img-big">
                             <img src="<?= $URLASSOLUTO ?>img/pepito_HD.jpg" alt="Pepito">
                         </div>
                         <div class="mini-card-text">
@@ -33,8 +33,8 @@
                     </div>
                 </a>
                 <a href="<?= $URLASSOLUTO ?>schede-prodotti/firex.html">
-                    <div class="mini-card">
-                        <div class="mini-card-img">
+                    <div class="mini-card-big">
+                        <div class="mini-card-img-big">
                             <img src="<?= $URLASSOLUTO ?>img/firex.jpg" alt="Pepito">
                         </div>
                         <div class="mini-card-text">
@@ -48,8 +48,8 @@
                     </div>
                 </a>
                 <a href="<?= $URLASSOLUTO ?>schede-prodotti/holzpellet.html">
-                    <div class="mini-card">
-                        <div class="mini-card-img">
+                    <div class="mini-card-big">
+                        <div class="mini-card-img-big">
                             <img src="<?= $URLASSOLUTO ?>img/holzpellet.jpg" alt="Pepito">
                         </div>
                         <div class="mini-card-text">
@@ -63,8 +63,8 @@
                     </div>
                 </a>
                 <a href="<?= $URLASSOLUTO ?>schede-prodotti/Europellet.html">
-                    <div class="mini-card">
-                        <div class="mini-card-img">
+                    <div class="mini-card-big">
+                        <div class="mini-card-img-big">
                             <img src="<?= $URLASSOLUTO ?>img/europellet.jpg" alt="Pepito">
                         </div>
                         <div class="mini-card-text">
@@ -78,8 +78,8 @@
                     </div>
                 </a>
                 <a href="<?= $URLASSOLUTO ?>schede-prodotti/pellet-sfuso.html">
-                    <div class="mini-card">
-                        <div class="mini-card-img">
+                    <div class="mini-card-big">
+                        <div class="mini-card-img-big">
                             <img src="<?= $URLASSOLUTO ?>img/pellet-sfuso.jpg" alt="Pepito">
                         </div>
                         <div class="mini-card-text">
@@ -95,7 +95,7 @@
             </div>
         </div>
     </section>
-    <section class="sect-catalogo">
+    <section class="bg-white">
         <div class="contenitore">
             <div class="box-mezzo">
                 <h2 class="text-black text-bolder">

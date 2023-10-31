@@ -4,32 +4,36 @@
         <p>Vedi tutta la nostra produzione e accedi alla scheda<br> prodotto per le caratteristiche tecniche</p>
 
         <div class="carusel mini-card-container">
-            <div class="mini-card">
-                <div class="mini-card-img">
-                    <img src="<?= $URLASSOLUTO ?>img/pepito_HD.jpg" alt="Pepito">
+            <a href="<?= $URLASSOLUTO ?>schede-prodotti/pepito.html">
+                <div class="mini-card">
+                    <div class="mini-card-img">
+                        <img src="<?= $URLASSOLUTO ?>img/pepito_HD.jpg" alt="Pepito">
+                    </div>
+                    <div class="mini-card-text">
+                        <p class="mini-card-title">
+                            PEPITO
+                        </p>
+                        <p class="mini-card-desc">
+                            Conifera e latifoglia,<br>Classe A1
+                        </p>
+                    </div>
                 </div>
-                <div class="mini-card-text">
-                    <p class="mini-card-title">
-                        PEPITO
-                    </p>
-                    <p class="mini-card-desc">
-                        Conifera e latifoglia,<br>Classe A1
-                    </p>
+            </a>
+            <a href="<?= $URLASSOLUTO ?>schede-prodotti/firex.html">
+                <div class="mini-card">
+                    <div class="mini-card-img">
+                        <img src="<?= $URLASSOLUTO ?>img/firex.jpg" alt="Pepito">
+                    </div>
+                    <div class="mini-card-text">
+                        <p class="mini-card-title">
+                            FIREX
+                        </p>
+                        <p class="mini-card-desc">
+                            Conifera e latifoglia,<br>Classe A1
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div class="mini-card">
-                <div class="mini-card-img">
-                    <img src="<?= $URLASSOLUTO ?>img/firex.jpg" alt="Pepito">
-                </div>
-                <div class="mini-card-text">
-                    <p class="mini-card-title">
-                        FIREX
-                    </p>
-                    <p class="mini-card-desc">
-                        Conifera e latifoglia,<br>Classe A1
-                    </p>
-                </div>
-            </div>
+            </a>
             <div class="mini-card">
                 <div class="mini-card-img">
                     <img src="<?= $URLASSOLUTO ?>img/Holzpellet.jpg" alt="Pepito">

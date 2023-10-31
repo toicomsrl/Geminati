@@ -73,11 +73,6 @@ hr {
 header nav {
 	padding: 0px !important;
 }
-header {
-	/*
-	border-bottom: 1px solid #e5e5e5;
-	padding-top: 14px;*/
-}
 
 @media screen and (min-width: 1251px) {
 	header {
@@ -200,7 +195,7 @@ header {
 
 .contenitore {
 	width: 96%;
-	max-width: 1500px;
+	max-width: 1600px;
 	margin: auto;
 }
 .cont-sm {
@@ -344,7 +339,8 @@ h6 {
 	font-family: "Montserrat", sans-serif;
 	line-height: 1.2em;
 }
-p {
+p,
+li {
 	font-size: 1.125em;
 	font-family: "Montserrat", sans-serif;
 	font-weight: 400;
@@ -713,7 +709,7 @@ textarea {
 
 	.header {
 		background: #fff;
-		height: 50px;
+		height: 75px;
 		padding: 0;
 	}
 
@@ -773,6 +769,9 @@ textarea {
 }
 
 /** SITE WIDE **/
+section {
+	padding-block: 50px;
+}
 
 .titolo-sezione {
 	font-size: 2.25rem;
@@ -788,11 +787,7 @@ textarea {
 }
 
 .first-section {
-	margin-top: 100px;
-}
-
-.bordered {
-	border: 1px solid red;
+	margin-top: 200px;
 }
 
 .btn-freccia {
@@ -839,24 +834,8 @@ textarea {
 	background-size: 40px;
 }
 
-.text-black {
-	color: #000;
-}
-
-.text-white {
-	color: #fff;
-}
-
-.text-bolder {
-	font-weight: 900;
-}
-
-.text-bold {
-	font-weight: 700;
-}
-
-.fs-48px {
-	font-size: 3rem;
+.bg-white {
+	background: #fff;
 }
 
 /** HOME **/
@@ -876,11 +855,11 @@ textarea {
 }
 
 .slide-2 {
-	background: radial-gradient(127.53% 127.53% at 18.77% -30.77%, #fff 0%, #fff 32.81%, #0e4e07 100%), url("../img/bosco.png");
+	background: radial-gradient(127.53% 127.53% at 18.77% -30.77%, #fff 0%, #fff 32.81%, #0e4e07 100%), url("../img/bosco.jpg");
 }
 
 .slide-3 {
-	background: radial-gradient(127.53% 127.53% at 18.77% -30.77%, #fff 0%, #fff 35.84%, #240a0a 100%), url("../img/tronchi.png");
+	background: radial-gradient(127.53% 127.53% at 18.77% -30.77%, #fff 0%, #fff 35.84%, #240a0a 100%), url("../img/tronchi.jpg");
 }
 
 .slider-box-testo {
@@ -913,26 +892,11 @@ textarea {
 	}
 }
 
-.sect-catalogo {
-	padding-block: 100px;
-	background: #fff;
-}
-
-.sect-prodotti {
-	background-color: #f5f3ef;
-	padding-block: 100px;
-}
-
 .sect-prod-distr {
 	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/produzione-distribuzione.png");
 	background-position: bottom;
 	padding: 350px 0 50px 0;
 	overflow: hidden;
-}
-
-.sect-lett-cipp {
-	padding-block: 100px;
-	background: #fff;
 }
 
 .sect-enplus {
@@ -945,11 +909,11 @@ textarea {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	margin-top: 0px;
+	margin-top: 70px;
 }
 
 .card {
-	height: 700px;
+	min-height: 700px;
 	width: 600px;
 	padding: 0;
 	display: flex;
@@ -1033,6 +997,17 @@ textarea {
 	border-radius: 22px;
 }
 
+.mini-card-big {
+	min-width: 350px;
+	height: 500px;
+	background-color: #fff;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	border-radius: 22px;
+}
+
 .mini-card-img {
 	height: 300px;
 	display: flex;
@@ -1040,8 +1015,19 @@ textarea {
 	justify-content: center;
 }
 
+.mini-card-img-big {
+	height: 400px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 .mini-card-img img {
 	height: 260px;
+}
+
+.mini-card-img-big img {
+	height: 320px;
 }
 
 .mini-card-text {
@@ -1078,24 +1064,27 @@ textarea {
 	justify-content: left;
 }
 
-.sect-produzione {
-	margin-top: 200px;
+.box-img {
 	background: #fff;
 	border-radius: 44px;
 }
 
-.sect-produzione__text {
+.box-img__text {
 	padding: 50px 50px;
 }
 
-.sect-produzione__text h1 {
+.box-img__text h1 {
 	margin-bottom: 60px;
 }
 
-.sect-produzione__img {
+.box-img__img {
 	padding: 0;
 	border-radius: 0 44px 44px 0;
 	overflow: hidden;
+}
+
+.box-img__img img {
+	max-width: 1100px;
 }
 
 @media screen and (max-width: 900px) {
@@ -1116,6 +1105,9 @@ textarea {
 
 .box-img-prodotto img {
 	border-radius: 22px;
+	padding: 30px;
+	background: #fff;
+	max-width: 285px;
 }
 
 .box-desc-prodotto h1 {
@@ -1164,6 +1156,99 @@ textarea {
 	}
 }
 
+/** AZIENDA **/
+
+.slide-azienda {
+	background: #a1a1a1 url("../img/geminati-azienda.jpg");
+	background-position-y: center;
+	background-size: auto;
+	height: 900px;
+}
+
+.slide-azienda h1 {
+	font-size: 6.25rem;
+}
+
+@media screen and (max-width: 1250px) {
+	.slide-azienda h1 {
+		padding-top: 150px;
+		font-size: 5rem;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.slide-azienda h1 {
+		padding-top: 100px;
+		font-size: 4rem;
+	}
+}
+
+.sect-servizi {
+	background: #fff;
+	padding-block: 50px;
+}
+
+.card-text-azienda {
+	text-align: center;
+	background: #e6e2da;
+	border-radius: 0 0 40px 40px;
+	min-height: 250px;
+}
+
+.card-text-azienda p {
+	color: #000;
+}
+
+.card-text-azienda a {
+	margin-top: 20px;
+	color: #000;
+	border: 1px solid #000;
+}
+
+.card-containers {
+	background: url("../img/containers.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-position: top;
+	background-size: contain;
+}
+
+.card-trasporti {
+	background: url("../img/trasporti.jpg");
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: contain;
+}
+
+.sect-produzione-azienda {
+	margin-block: 100px;
+	background: #fff;
+	border-radius: 44px;
+}
+
+.sect-video {
+	height: 600px;
+	background: #fff;
+	padding-block: 100px;
+}
+
+/** CERTIFICAZIONI **/
+.card-cert-produttori {
+	background: url("../img/certificato-produttori.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	height: 800px;
+}
+
+.card-cert-distributori {
+	background: url("../img/Certificato-distributori.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	height: 800px;
+}
+
 /** FOOTER **/
 footer {
 	padding-block: 100px;
@@ -1174,7 +1259,7 @@ footer {
 	margin-bottom: 50px;
 }
 
-.footer__certificazioni {
+.row__certificazioni {
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
@@ -1201,7 +1286,13 @@ footer {
 	.footer__certificazioni {
 		justify-content: center;
 	}
+
+	.row__certificazioni {
+		justify-content: center;
+	}
 }
+
+/*SLICK*/
 
 .slick-list {
 	width: 100%;
@@ -1210,4 +1301,73 @@ footer {
 .slick-slide img {
 	width: auto;
 	display: inline;
+}
+
+/*UTILITY CLASSES*/
+.p-1 {
+	padding: 1rem;
+}
+
+.p-2 {
+	padding: 2rem;
+}
+
+.p-4 {
+	padding: 4rem;
+}
+
+.p-6 {
+	padding: 6rem;
+}
+
+.p-inline-1 {
+	padding-inline: 1rem;
+}
+
+.p-inline-2 {
+	padding-inline: 2rem;
+}
+
+.p-inline-4 {
+	padding-inline: 4rem;
+}
+
+.p-inline-6 {
+	padding-inline: 6rem;
+}
+
+.p-block-1 {
+	padding-block: 1rem;
+}
+
+.p-block-2 {
+	padding-block: 2rem;
+}
+
+.p-block-4 {
+	padding-block: 4rem;
+}
+
+.p-block-6 {
+	padding-block: 6rem;
+}
+
+.text-black {
+	color: #000;
+}
+
+.text-white {
+	color: #fff;
+}
+
+.text-bolder {
+	font-weight: 900;
+}
+
+.text-bold {
+	font-weight: 700;
+}
+
+.fs-48px {
+	font-size: 3rem;
 }
