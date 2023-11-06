@@ -99,7 +99,7 @@ $(document).on("ready", function () {
 	})
 
 	$(".carusel").slick({
-		dots: false,
+		dots: true,
 		infinite: true,
 		arrows: false,
 		autoplay: true,

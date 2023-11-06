@@ -44,12 +44,13 @@
         </div>
         <div class="box-dueterzi">
             <p class="titolo-sezione">Scrivici</p>
-            <form accept-charset="utf-8" method="post" action="<?= $URLASSOLUTO ?>/mail/sendContatti.php" id="formContatti">
+            <form id="contatti" accept-charset="utf-8" method="post" action="<?= $URLASSOLUTO ?>/mail/sendContatti.php" id="formContatti">
                 <input type="text" required="required" placeholder="Nome Cognome" name="Nome" value="" class="inputText_contatti">
                 <input type="text" placeholder="Azienda" name="Azienda" value="" class="inputText_contatti">
                 <input type="indirizzo" required="required" placeholder="Indirizzo" name="Indirizzo" value="" class="inputText_contatti">
                 <input type="tel" placeholder="Telefono" name="Telefono" value="" class="inputText_contatti">
                 <input type="email" required="required" placeholder="Email" name="Email" value="" class="inputText_contatti">
+                <textarea required="required" placeholder="Il tuo messaggio" name="Messaggio" value="" class="inputText_contatti"></textarea>
                 <div class="pulizia"></div>
                 <input type="submit" value="Invia Richiesta" name="invia" class="invia-form">
             </form>

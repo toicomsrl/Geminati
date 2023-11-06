@@ -10,15 +10,15 @@
             <img src="<?= $URLASSOLUTO ?>img/logo-en-plus.png" alt="">
             <p class="prodotto-proprieta"><span class="prodotto-nome-proprieta">Materia prima di origine</span><span class="prodotto-valore-proprieta">Misto Confifera e Latifoglia</span></p>
             <p class="prodotto-proprieta"><span class="prodotto-nome-proprieta">Classe diametrica</span><span class="prodotto-valore-proprieta">6.0mm</span></p>
-            <p class="prodotto-proprieta"><span class="prodotto-nome-proprieta">Contenuto idrico</span><span class="prodotto-valore-proprieta">7,0 %tq</span></p>
-            <p class="prodotto-proprieta"><span class="prodotto-nome-proprieta">Contenuto ceneri</span><span class="prodotto-valore-proprieta">0,47 %secco</span></p>
-            <p class="prodotto-proprieta"><span class="prodotto-nome-proprieta">Durabilità meccanica</span><span class="prodotto-valore-proprieta">98,8 %tq</span></p>
-            <p class="prodotto-proprieta"><span class="prodotto-nome-proprieta">Contenuti in fini</span><span class="prodotto-valore-proprieta">0.2 %tq</span></p>
-            <p class="prodotto-proprieta"><span class="prodotto-nome-proprieta">Potere calorifico inferiore</span><span class="prodotto-valore-proprieta">Mj/kg 17,50 - Kwh/kg 4,86</span></p>
-            <p class="prodotto-proprieta"><span class="prodotto-nome-proprieta">Massa volumica sterica</span><span class="prodotto-valore-proprieta">690 kg/m&sup3;</span></p>
+            <p class="prodotto-proprieta"><span class="prodotto-nome-proprieta">Contenuto idrico</span><span class="prodotto-valore-proprieta">8,1 %tq</span></p>
+            <p class="prodotto-proprieta"><span class="prodotto-nome-proprieta">Contenuto ceneri</span><span class="prodotto-valore-proprieta">0,62 %secco</span></p>
+            <p class="prodotto-proprieta"><span class="prodotto-nome-proprieta">Durabilità meccanica</span><span class="prodotto-valore-proprieta">98,7 %tq</span></p>
+            <p class="prodotto-proprieta"><span class="prodotto-nome-proprieta">Contenuti in fini</span><span class="prodotto-valore-proprieta">0.3 %tq</span></p>
+            <p class="prodotto-proprieta"><span class="prodotto-nome-proprieta">Potere calorifico inferiore</span><span class="prodotto-valore-proprieta">Mj/kg 17,29</span></p>
+            <p class="prodotto-proprieta"><span class="prodotto-nome-proprieta">Massa volumica sterica</span><span class="prodotto-valore-proprieta">640 kg/m&sup3;</span></p>
             <div class="prodotto-download">
-                <img src="<?= $URLASSOLUTO ?>img/download-scheda-tecnica.png" alt="">
-                <img src="<?= $URLASSOLUTO ?>img/richiesta-info.png" alt="">
+                <a href="<?= $URLASSOLUTO ?>doc/schedatecnica-pellet-sfuso-in-bigbag.pdf" target="_blank"><img src="<?= $URLASSOLUTO ?>img/download-scheda-tecnica.png" alt=""></a>
+                <a href="#contatti"><img src="<?= $URLASSOLUTO ?>img/richiesta-info.png" alt=""></a>
             </div>
         </div>
     </div>

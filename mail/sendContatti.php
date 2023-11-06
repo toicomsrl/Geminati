@@ -5,20 +5,21 @@ if(strstr($_SERVER["HTTP_REFERER"], "geminati.it") && $_POST !=""){
 	
 	
 	// Richiamo variabili
-	$Controllo = $_POST['control'];
+	//$Controllo = $_POST['control'];
 	$Nome = $_POST['Nome'];
     $Azienda = $_POST['Azienda'];
+	$Indirizzo = $_POST['Indirizzo'];
+	$Telefono = $_POST['Telefono'];
 	$Email = $_POST['Email'];
-    $Telefono = $_POST['Telefono'];
 	$Messaggio = $_POST['Messaggio'];
 	$Provenienza = $_SERVER["HTTP_REFERER"];
-    $Risultato = $_POST['risultato'];
+    //$Risultato = $_POST['risultato'];
     
 	$oggetto = "GEMINATI - Richiesta dal WEB";	
 	
     
 
-	if (($Email == "") || ($Nome == "") || ($Messaggio == "") || ($Controllo != "") || ($Risultato != "6")) {
+	if (($Email == "") || ($Nome == "") || ($Messaggio == "")){ // || ($Controllo != "") || ($Risultato != "6")) {
 		header("location: ../contatti-ko.html#ko") or Die;
 	} else 
 		
@@ -63,7 +64,7 @@ if(strstr($_SERVER["HTTP_REFERER"], "geminati.it") && $_POST !=""){
 			$body .= "\nA breve sarai ricontattato e capiremo insieme le tue esigenze.";
 			
 			$body .= "\n______________________________________________\n\n";
-			$body .= "Brescia Porte\nVia Zanardelli 187 – 25060, Marcheno (BS) \nTel: 030 8610030\n\n";
+			$body .= "Geminati Pierino s.r.l.\nVia Artigianale 3 – 25020, Cigole (BS) \nTel: 030 9959721\n\n";
 			$body .= "https://www.bresciaporte.com/ - info@bresciaporte.com";
 			$invia2 = mail($Email,$oggetto2,$body,$intestazioni2);
 
@@ -99,5 +100,3 @@ if(strstr($_SERVER["HTTP_REFERER"], "geminati.it") && $_POST !=""){
 		}
 		
 	}
-
-?>

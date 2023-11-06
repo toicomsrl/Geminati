@@ -70,18 +70,20 @@ hr {
 	max-width: 60%;
 	width: 230px;
 }
+
+header {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 999;
+}
+
 header nav {
 	padding: 0px !important;
 }
 
 @media screen and (min-width: 1251px) {
-	header {
-		position: fixed;
-		width: 100%;
-		top: 0;
-		left: 0;
-		z-index: 999;
-	}
 	header nav ul {
 		list-style: none;
 		float: left;
@@ -587,15 +589,15 @@ textarea {
 
 @media screen and (max-width: 600px) {
 	h2 {
-		font-size: 2em;
+		font-size: 2.6em;
 	}
 }
 
 @media screen and (max-width: 1250px) {
-	header {
+	/*header {
 		background: rgba(255, 255, 255, 0.95);
 		position: relative;
-	}
+	}*/
 	.box-quarto {
 		width: 50%;
 	}
@@ -708,7 +710,7 @@ textarea {
 	}
 
 	.header {
-		background: #fff;
+		/*background: #fff;*/
 		height: 75px;
 		padding: 0;
 	}
@@ -788,6 +790,12 @@ section {
 
 .first-section {
 	margin-top: 200px;
+}
+
+@media screen and (max-width: 900px) {
+	.first-section {
+		margin-top: 100px;
+	}
 }
 
 .btn-freccia {
@@ -876,19 +884,17 @@ section {
 }
 
 @media screen and (max-width: 1200px) {
-	.slide {
-		padding: 0;
+	.slider-box-img img {
+		height: 400px;
 	}
 }
 
-@media screen and (max-width: 600px) {
-	.home-slider {
+@media screen and (max-width: 768px) {
+	.slide {
 		padding: 0;
-		margin-bottom: 100px;
 	}
-
-	.slider-box-testo {
-		padding-top: 20px;
+	.slider-box-img img {
+		height: 250px;
 	}
 }
 
@@ -922,6 +928,12 @@ section {
 	border-radius: 40px;
 	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 	margin-bottom: 50px;
+}
+
+@media screen and (max-width: 600px) {
+	.card {
+		min-height: 580px;
+	}
 }
 
 .card-text {
@@ -1080,11 +1092,11 @@ section {
 .box-img__img {
 	padding: 0;
 	border-radius: 0 44px 44px 0;
-	overflow: hidden;
 }
 
 .box-img__img img {
-	max-width: 1100px;
+	width: 100%;
+	border-radius: 0 44px 44px 0;
 }
 
 @media screen and (max-width: 900px) {
@@ -1095,6 +1107,14 @@ section {
 	.mini-card-container-prodotti {
 		justify-content: center;
 		gap: 50px;
+	}
+
+	.box-img__img {
+		border-radius: 0 0 44px 44px;
+	}
+
+	.box-img__img img {
+		border-radius: 0 0 44px 44px;
 	}
 }
 
@@ -1188,6 +1208,19 @@ section {
 	padding-block: 50px;
 }
 
+.card-azienda {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	max-width: 600px;
+	margin-bottom: 50px;
+}
+
+.card-azienda img {
+	border-radius: 44px 44px 0 0;
+	width: 100%;
+}
+
 .card-text-azienda {
 	text-align: center;
 	background: #e6e2da;
@@ -1203,14 +1236,6 @@ section {
 	margin-top: 20px;
 	color: #000;
 	border: 1px solid #000;
-}
-
-.card-containers {
-	background: url("../img/containers.jpg");
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-position: top;
-	background-size: contain;
 }
 
 .card-trasporti {
@@ -1238,7 +1263,6 @@ section {
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
-	height: 800px;
 }
 
 .card-cert-distributori {
@@ -1246,7 +1270,6 @@ section {
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
-	height: 800px;
 }
 
 /** FOOTER **/
@@ -1301,6 +1324,15 @@ footer {
 .slick-slide img {
 	width: auto;
 	display: inline;
+}
+
+.slick-dots {
+	bottom: -50px;
+}
+
+.slick-dots li button {
+	background: #e6e2da;
+	border: 2px solid #e6e2da;
 }
 
 /*UTILITY CLASSES*/
@@ -1370,4 +1402,14 @@ footer {
 
 .fs-48px {
 	font-size: 3rem;
+}
+
+.p-50 {
+	padding-inline: 50px;
+}
+
+@media screen and (max-width: 900px) {
+	.fs-48px {
+		font-size: 2.5rem;
+	}
 }

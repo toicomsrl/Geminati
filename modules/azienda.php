@@ -33,14 +33,17 @@
             <p class="titolo-sezione">Servizi</p>
             <p>Lettiera per ogni tipo di animale e cippato per impianti industriali</p>
             <div class="card-container">
-                <div class="card card-containers">
+                <div class="card-azienda">
+                    <img src="<?= $URLASSOLUTO ?>img/containers.jpg" alt="">
                     <div class="card-text-azienda">
                         <p class="card-title">150 containers</p>
                         <p class="card-desc">150 containers a disposizione delle aziende</p>
-                        <a href="<?= $URLASSOLUTO ?>prodotti.html" class="card-button">CHIAMACI</a>
+                        <a href="tel:+390309959721" class="card-button">CHIAMACI</a>
                     </div>
                 </div>
-                <div class="card card-trasporti">
+                <div class="card-azienda">
+                    <img src="<?= $URLASSOLUTO ?>img/trasporti.jpg" alt="">
+
                     <div class="card-text-azienda">
                         <p class="card-title">Rete trasporti di proprietà</p>
                         <p class="card-desc">Biocombustibile ecologico utilizzato in impianti industriali</p>
@@ -53,7 +56,7 @@
     <section>
         <div class="contenitore sect-produzione-azienda">
             <div class="box-terzo box-img__text p-4">
-                <h1 class="text-black">Produzione 24/7 tutto l'anno</h1>
+                <h2 class="text-black">Produzione 24/7 tutto l'anno</h2>
                 <p>l nostro pellet è prodotto e confezionato internamente, gestendo l'intero ciclo produttivo dalla raccolta delle materie prime alla lavorazione, confezionamento e stoccaggio. Grazie al controllo completo del processo, garantiamo qualità e puntualità nella fornitura dei prodotti. </p>
             </div>
             <div class="box-dueterzi box-img__img">

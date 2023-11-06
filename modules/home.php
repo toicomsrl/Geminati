@@ -6,8 +6,8 @@
                     <h1 class="text-bolder text-white">Pellet di legno, conifera e latifoglia, privi di corteccia.</h1>
                     <p class="text-white">PEPITO, prodotto naturale di alta qualità certificato in classe A1</p>
                     <div class="btn-container">
-                        <a href="<?= $URLASSOLUTO ?>prodotti/" class="btn-white btn-phone">Chiama ora</a>
-                        <a href="<?= $URLASSOLUTO ?>prodotti/" class="btn-white btn-mail">Scrivi ora</a>
+                        <a href="tel:+390309959721" class="btn-white btn-phone">Chiama ora</a>
+                        <a href="#contatti" class="btn-white btn-mail">Scrivi ora</a>
                     </div>
                 </div>
                 <div class="box-mezzo slider-box-img">
@@ -21,8 +21,8 @@
                     <h1 class="text-bolder text-white">Pellet di legno, conifera e latifoglia, privi di corteccia.</h1>
                     <p class="text-white">PEPITO, prodotto naturale di alta qualità certificato in classe A1</p>
                     <div class="btn-container">
-                        <a href="<?= $URLASSOLUTO ?>prodotti/" class="btn-white btn-phone">Chiama ora</a>
-                        <a href="<?= $URLASSOLUTO ?>prodotti/" class="btn-white btn-mail">Scrivi ora</a>
+                        <a href="tel:+390309959721" class="btn-white btn-phone">Chiama ora</a>
+                        <a href="#contatti" class="btn-white btn-mail">Scrivi ora</a>
                     </div>
                 </div>
                 <div class="box-mezzo slider-box-img">
@@ -36,8 +36,8 @@
                     <h1 class="text-bolder text-white">Pellet di legno, conifera e latifoglia, privi di corteccia.</h1>
                     <p class="text-white">PEPITO, prodotto naturale di alta qualità certificato in classe A1</p>
                     <div class="btn-container">
-                        <a href="<?= $URLASSOLUTO ?>prodotti/" class="btn-white btn-phone">Chiama ora</a>
-                        <a href="<?= $URLASSOLUTO ?>prodotti/" class="btn-white btn-mail">Scrivi ora</a>
+                        <a href="tel:+390309959721" class="btn-white btn-phone">Chiama ora</a>
+                        <a href="#contatti" class="btn-white btn-mail">Scrivi ora</a>
                     </div>
                 </div>
                 <div class="box-mezzo slider-box-img">

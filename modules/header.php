@@ -2,7 +2,7 @@
 
 $class = "";
 
-if ($modulo == 'prodotti' || $fold == 'schede-prodotti' || $modulo == 'certificazioni' || $modulo == 'contatti') {
+if ($modulo == 'prodotti' || $fold == 'schede-prodotti' || $modulo == 'certificazioni' || $modulo == 'contatti' || $modulo == "contatti-ok" || $modulo == "contatti-ko") {
     $class = 'text-black';
 }
 ?>

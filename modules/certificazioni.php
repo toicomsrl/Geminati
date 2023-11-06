@@ -90,7 +90,7 @@
                 <div class="card card-cert-distributori">
                     <div class="card-text">
                         <p class="card-title p-block-2">Certificazione distributori</p>
-                        <a href="<?= $URLASSOLUTO ?>prodotti.html" class="card-button">CATALOGO</a>
+                        <a href="<?= $URLASSOLUTO ?>prodotti.html" class="card-button">SCARICA</a>
                     </div>
                 </div>
             </div>
