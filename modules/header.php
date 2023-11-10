@@ -23,7 +23,11 @@ if ($modulo == 'prodotti' || $fold == 'schede-prodotti' || $modulo == 'certifica
             <li><a href="<?= $URLASSOLUTO ?>prodotti.html" class="menu-item <?php echo $class; ?>">PRODOTTI</a></li>
             <li><a href="<?= $URLASSOLUTO ?>certificazioni.html" class="menu-item <?php echo $class; ?>">CERTIFICAZIONI</a></li>
             <li><a href="<?= $URLASSOLUTO ?>azienda.html" class="menu-item <?php echo $class; ?>">AZIENDA</a></li>
-            <li><a href="<?= $URLASSOLUTO ?>contatti.html" class="menu-item <?php echo $class; ?>">CONTATTI</a></li>
+            <?php if ($modulo == "home") { ?>
+                <li><a href="<?= $URLASSOLUTO ?>#contatti" class="menu-item <?php echo $class; ?>">CONTATTI</a></li>
+            <?php } else { ?>
+                <li><a href="<?= $URLASSOLUTO . $modulo . ".html" ?>#contatti" class="menu-item <?php echo $class; ?>">CONTATTI</a></li>
+            <?php } ?>
         </ul>
         <div class="pulizia"></div>
     </nav>

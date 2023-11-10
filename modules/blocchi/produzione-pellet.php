@@ -7,7 +7,7 @@
             <a href="<?= $URLASSOLUTO ?>schede-prodotti/pepito.html">
                 <div class="mini-card">
                     <div class="mini-card-img">
-                        <img src="<?= $URLASSOLUTO ?>img/pepito_HD.jpg" alt="Pepito">
+                        <img src="<?= $URLASSOLUTO ?>img/PEPITO_HD.jpg" alt="Pepito">
                     </div>
                     <div class="mini-card-text">
                         <p class="mini-card-title">

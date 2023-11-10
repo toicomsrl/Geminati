@@ -142,6 +142,24 @@ include_once("dati-seo.php");
     <script src="<?= $URLASSOLUTO ?>js/common.js" type="text/javascript" charset="utf-8"></script>
     <script src="<?= $URLASSOLUTO ?>js/wow.js" type="text/javascript" charset="utf-8"></script>
     <script src="<?= $URLASSOLUTO ?>js/simple-lightbox.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+        function PopupCentrata() {
+            var w = 580;
+            var h = 530;
+            var l = Math.floor((screen.width - w) / 2);
+            var t = Math.floor((screen.height - h) / 2);
+            window.open("http://www.iubenda.it", "", "width=" + w + ",height=" + h + ",top=" + t + ",left=" + l);
+        }
+
+        function slidetop() {
+            $("#slide02").fadeToggle(500);
+            $("#slide01").fadeToggle(500);
+        }
+
+        setInterval(function() {
+            slidetop()
+        }, 6000);
+    </script>
 </body>
 
 </html>

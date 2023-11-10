@@ -54,13 +54,12 @@
         <div class="pulizia"></div>
     </section>
     <section>
-        <div class="contenitore sect-produzione-azienda">
-            <div class="box-terzo box-img__text p-4">
+        <div class="contenitore sect-produzione-azienda box-img">
+            <div class="box-terzo box-img__text">
                 <h2 class="text-black">Produzione 24/7 tutto l'anno</h2>
                 <p>l nostro pellet è prodotto e confezionato internamente, gestendo l'intero ciclo produttivo dalla raccolta delle materie prime alla lavorazione, confezionamento e stoccaggio. Grazie al controllo completo del processo, garantiamo qualità e puntualità nella fornitura dei prodotti. </p>
             </div>
-            <div class="box-dueterzi box-img__img">
-                <img src="<?= $URLASSOLUTO ?>img/automazione-pellet.jpg" alt="" srcset="">
+            <div class="box-dueterzi box-img__img img-produzione">
             </div>
             <div class="pulizia"></div>
         </div>

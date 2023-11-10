@@ -50,11 +50,20 @@
                 <input type="indirizzo" required="required" placeholder="Indirizzo" name="Indirizzo" value="" class="inputText_contatti">
                 <input type="tel" placeholder="Telefono" name="Telefono" value="" class="inputText_contatti">
                 <input type="email" required="required" placeholder="Email" name="Email" value="" class="inputText_contatti">
-                <textarea required="required" placeholder="Il tuo messaggio" name="Messaggio" value="" class="inputText_contatti"></textarea>
+                <textarea required="required" placeholder="Il tuo messaggio" name="Messaggio" value="" class="inputText_contatti inputTextArea_contatti"></textarea>
+                <p style="margin-block: 0; margin-bottom: 5px">Controllo Antispam<b> 4 + 2</b> = </p>
+                <input class="inputText_contatti" placeholder="Inserisci il risultato" name="risultato" required="required" type="number" min="6" max="6" maxlength="1" autocomplete="off">
                 <div class="pulizia"></div>
+                <div class="inputText_contatti3">
+                    <input type="checkbox" required="required" name="Privacy" value="Accettata" id="Privacy">
+                    <a class="privacyacc" href="javascript:PopupCentrata()">Accettazione privacy</a>
+                </div>
                 <input type="submit" value="Invia Richiesta" name="invia" class="invia-form">
             </form>
         </div>
         <div class="pulizia"></div>
+    </div>
+    <div class="footer-row-3">
+        <p>Geminati Pierino s.r.l - Via Artigianale, 3 - 25020 Cigole (Brescia) - T +39 0309959721 - P.iva 03506840986 - credits - Cookie Privacy</p>
     </div>
 </footer>

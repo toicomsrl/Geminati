@@ -2,12 +2,12 @@
 <article>
     <section class="first-section">
         <div class="contenitore box-img">
-            <div class="box-terzo box-img__text p-4">
+            <div class="box-terzo box-img__text">
                 <h1 class="text-black fs-48px">Certificazioni e associazioni</h1>
                 <p>La norma EN 17225 definisce gli standard europei per i pellet, e la certificazione ENplus si basa su questa norma. L'obiettivo della certificazione è garantire che i prodotti commercializzati rispettino i requisiti di qualità e costanza. Grazie a ENplus, è possibile acquistare pellet di alta qualità in tutta Europa, con un sistema di certificazione trasparente che esamina l'intera catena di produzione, dal materiale prima alla consegna al cliente finale. </p>
             </div>
-            <div class="box-dueterzi box-img__img">
-                <img src="<?= $URLASSOLUTO ?>img/certificazioni.jpg" width="100%" alt="" srcset="">
+            <div class="box-dueterzi box-img__img img-certificazioni">
+
             </div>
             <div class="pulizia"></div>
         </div>

@@ -2,7 +2,7 @@
 <section class="first-section">
     <div class="contenitore">
         <div class="box-terzo box-img-prodotto">
-            <img src="<?= $URLASSOLUTO ?>img/holzpellet.jpg" alt="">
+            <img src="<?= $URLASSOLUTO ?>img/Holzpellet.jpg" alt="">
         </div>
         <div class="box-dueterzi box-desc-prodotto">
             <h1 class="text-black">Holz pellet</h1>
@@ -47,7 +47,7 @@
             <a href="<?= $URLASSOLUTO ?>schede-prodotti/firex.html">
                 <div class="mini-card">
                     <div class="mini-card-img">
-                        <img src="<?= $URLASSOLUTO ?>img/firex.jpg" alt="Pepito">
+                        <img src="<?= $URLASSOLUTO ?>img/firex.jpg" alt="Firex">
                     </div>
                     <div class="mini-card-text">
                         <p class="mini-card-title">
@@ -62,7 +62,7 @@
             <a href="<?= $URLASSOLUTO ?>schede-prodotti/europellet.html">
                 <div class="mini-card">
                     <div class="mini-card-img">
-                        <img src="<?= $URLASSOLUTO ?>img/europellet.jpg" alt="Pepito">
+                        <img src="<?= $URLASSOLUTO ?>img/Europellet.jpg" alt="Europellet">
                     </div>
                     <div class="mini-card-text">
                         <p class="mini-card-title">
@@ -77,7 +77,7 @@
             <a href="<?= $URLASSOLUTO ?>schede-prodotti/pellet-sfuso.html">
                 <div class="mini-card">
                     <div class="mini-card-img">
-                        <img src="<?= $URLASSOLUTO ?>img/pellet-sfuso.jpg" alt="Pepito">
+                        <img src="<?= $URLASSOLUTO ?>img/pellet-sfuso.jpg" alt="Pellet sfuso">
                     </div>
                     <div class="mini-card-text">
                         <p class="mini-card-title">

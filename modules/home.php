@@ -56,7 +56,7 @@
             </div>
 
             <div class="box-mezzo">
-                <h2 class="text-black text-bolder">
+                <h2 class="text-black text-bolder h2-home">
                     Produzione pellet.<br>Qualità, varietà,<br>personalizzazione
                 </h2>
             </div>

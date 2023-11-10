@@ -6,6 +6,9 @@
 * {
 	box-sizing: border-box;
 }
+html {
+	scroll-behavior: smooth;
+}
 input[type="submit"] {
 	-webkit-appearance: none;
 	-moz-appearance: none;
@@ -278,6 +281,7 @@ header nav {
 .margine-big {
 	margin: 105px auto 90px;
 }
+
 .top-nom {
 	margin-top: 30px;
 }
@@ -388,6 +392,9 @@ li {
 	font-family: "PoppMontserratins", sans-serif;
 	margin-bottom: 20px;
 	border-radius: 10px;
+}
+.inputTextArea_contatti {
+	height: 150px;
 }
 ::placeholder {
 	color: #000;
@@ -589,7 +596,7 @@ textarea {
 
 @media screen and (max-width: 600px) {
 	h2 {
-		font-size: 2.6em;
+		font-size: 2.2em;
 	}
 }
 
@@ -723,8 +730,6 @@ textarea {
 	.box-mezzo {
 		width: 100%;
 	}
-}
-@media screen and (max-width: 800px) {
 	.inputleft,
 	.inputright {
 		width: 100%;
@@ -733,8 +738,6 @@ textarea {
 	.controlspam {
 		margin-top: 20px;
 	}
-}
-@media screen and (max-width: 600px) {
 	.box-mezzo {
 		width: 100%;
 	}
@@ -753,6 +756,10 @@ textarea {
 	.box-sesto {
 		width: 50%;
 	}
+}
+@media screen and (max-width: 800px) {
+}
+@media screen and (max-width: 600px) {
 }
 @media screen and (min-width: 1251px) {
 	#btn-01,
@@ -773,6 +780,12 @@ textarea {
 /** SITE WIDE **/
 section {
 	padding-block: 50px;
+}
+
+@media screen and (max-width: 960px) {
+	section {
+		padding-inline: 20px;
+	}
 }
 
 .titolo-sezione {
@@ -883,25 +896,30 @@ section {
 	text-align: center;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 800px) {
 	.slider-box-img img {
 		height: 400px;
 	}
-}
 
-@media screen and (max-width: 768px) {
 	.slide {
 		padding: 0;
 	}
+
+	.h2-home {
+		font-size: 1.8rem;
+	}
+}
+
+@media screen and (max-width: 600px) {
 	.slider-box-img img {
-		height: 250px;
+		height: 200px;
 	}
 }
 
 .sect-prod-distr {
 	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/produzione-distribuzione.png");
 	background-position: bottom;
-	padding: 350px 0 50px 0;
+	padding: 350px 20px 50px 20px;
 	overflow: hidden;
 }
 
@@ -909,6 +927,7 @@ section {
 	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/enplus.png");
 	padding-block: 200px;
 	overflow: hidden;
+	background-position: right;
 }
 
 .card-container {
@@ -1010,7 +1029,7 @@ section {
 }
 
 .mini-card-big {
-	min-width: 350px;
+	min-width: 300px;
 	height: 500px;
 	background-color: #fff;
 	text-align: center;
@@ -1079,6 +1098,7 @@ section {
 .box-img {
 	background: #fff;
 	border-radius: 44px;
+	display: flex;
 }
 
 .box-img__text {
@@ -1092,6 +1112,7 @@ section {
 .box-img__img {
 	padding: 0;
 	border-radius: 0 44px 44px 0;
+	min-height: 450px;
 }
 
 .box-img__img img {
@@ -1099,7 +1120,14 @@ section {
 	border-radius: 0 44px 44px 0;
 }
 
-@media screen and (max-width: 900px) {
+.img-prodotti {
+	background: url("../img/FIREX-AMBIENTE.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+@media screen and (max-width: 960px) {
 	.sect-produzione__img {
 		border-radius: 0 0 44px 44px;
 	}
@@ -1107,6 +1135,14 @@ section {
 	.mini-card-container-prodotti {
 		justify-content: center;
 		gap: 50px;
+	}
+
+	.box-img {
+		flex-direction: column;
+	}
+
+	.box-img__text {
+		padding: 50px 20px;
 	}
 
 	.box-img__img {
@@ -1180,7 +1216,7 @@ section {
 
 .slide-azienda {
 	background: #a1a1a1 url("../img/geminati-azienda.jpg");
-	background-position-y: center;
+	background-position: center;
 	background-size: auto;
 	height: 900px;
 }
@@ -1198,8 +1234,9 @@ section {
 
 @media screen and (max-width: 600px) {
 	.slide-azienda h1 {
-		padding-top: 100px;
-		font-size: 4rem;
+		padding-top: 250px;
+		padding-inline: 20px;
+		font-size: 3rem;
 	}
 }
 
@@ -1251,6 +1288,13 @@ section {
 	border-radius: 44px;
 }
 
+.img-produzione {
+	background: url("../img/automazione-pellet.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
 .sect-video {
 	height: 600px;
 	background: #fff;
@@ -1258,29 +1302,6 @@ section {
 }
 
 /** CERTIFICAZIONI **/
-.card-cert-produttori {
-	background: url("../img/certificato-produttori.jpg");
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: cover;
-}
-
-.card-cert-distributori {
-	background: url("../img/Certificato-distributori.jpg");
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: cover;
-}
-
-/** FOOTER **/
-footer {
-	padding-block: 100px;
-	background-color: #f5f3ef;
-}
-
-.footer-row-1 {
-	margin-bottom: 50px;
-}
 
 .row__certificazioni {
 	width: 100%;
@@ -1305,6 +1326,38 @@ footer {
 	object-fit: contain;
 }
 
+.img-certificazioni {
+	background: url("../img/certificazioni.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+.card-cert-produttori {
+	background: url("../img/certificato-produttori.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+.card-cert-distributori {
+	background: url("../img/Certificato-distributori.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+/** FOOTER **/
+footer {
+	padding-top: 100px;
+	background-color: #f5f3ef;
+}
+
+.footer-row-1 {
+	margin-bottom: 50px;
+	padding-inline: 20px;
+}
+
 @media screen and (max-width: 960px) {
 	.footer__certificazioni {
 		justify-content: center;
@@ -1312,6 +1365,29 @@ footer {
 
 	.row__certificazioni {
 		justify-content: center;
+	}
+}
+
+.footer-row-2 {
+	margin-bottom: 50px;
+}
+
+.footer-row-3 {
+	background: #000;
+	width: 100%;
+	padding-block: 10px;
+}
+
+.footer-row-3 p {
+	color: #fff;
+	font-size: 1.2rem;
+	text-align: center;
+}
+
+@media screen and (max-width: 960px) {
+	.footer-row-3 p {
+		padding-inline: 20px;
+		font-size: 1rem;
 	}
 }
 
@@ -1384,6 +1460,15 @@ footer {
 	padding-block: 6rem;
 }
 
+@media screen and (max-width: 600px) {
+	.p-inline-1,
+	.p-inline-2,
+	.p-inline-4,
+	.p-inline-6 {
+		padding-inline: 0;
+	}
+}
+
 .text-black {
 	color: #000;
 }
@@ -1410,6 +1495,6 @@ footer {
 
 @media screen and (max-width: 900px) {
 	.fs-48px {
-		font-size: 2.5rem;
+		font-size: 2.2rem;
 	}
 }
