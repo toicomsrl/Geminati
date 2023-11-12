@@ -12,7 +12,7 @@
             </div>
             <div class="card card-cippato">
                 <div class="card-text">
-                    <p class="card-title">Cippato di lego</p>
+                    <p class="card-title">Cippato di legno</p>
                     <p class="card-desc">Biocombustibile ecologico utilizzato in impianti industriali</p>
                     <a href="<?= $URLASSOLUTO ?>prodotti.html" class="card-button">CATALOGO</a>
                 </div>
