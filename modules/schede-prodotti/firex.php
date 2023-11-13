@@ -6,8 +6,8 @@
         </div>
         <div class="box-dueterzi box-desc-prodotto">
             <h1 class="text-black">Firex</h1>
-            <p>Pellet di legno vergine, ricavato da abete bianco privo di corteccia.<br>Prodotto naturale di qualità superiore.<br>Caratterizzato da un colore bianco, tipico del legno di abete con un bassissimo residuo di ceneri ed un elevato potere calorifico.<br>FIREX è certificato in classe A1 (la qualità più elevata), soddisfa ampiamente la norma 17225‐2 secondo lo standard europeo En Plus, il massimo della certificazione in termini di qualità e controllo continuo sul prodotto.
-                <img src="<?= $URLASSOLUTO ?>img/logo-en-plus.png" alt="">
+            <p>Pellet di legno vergine, ricavato da abete bianco privo di corteccia.<br>Prodotto naturale di qualità superiore.<br>Caratterizzato da un colore bianco, tipico del legno di abete con un bassissimo residuo di ceneri ed un elevato potere calorifico.<br>FIREX è certificato in classe A1 (la qualità più elevata), soddisfa ampiamente la norma 17225‐2 secondo lo standard europeo En Plus, il massimo della certificazione in termini di qualità e controllo continuo sul prodotto.</p>
+            <img src="<?= $URLASSOLUTO ?>img/logo-en-plus.png" alt="">
             <p class="prodotto-proprieta"><span class="prodotto-nome-proprieta">Materia prima di origine</span><span class="prodotto-valore-proprieta">Abete 100%</span></p>
             <p class="prodotto-proprieta"><span class="prodotto-nome-proprieta">Classe diametrica</span><span class="prodotto-valore-proprieta">6.0mm</span></p>
             <p class="prodotto-proprieta"><span class="prodotto-nome-proprieta">Contenuto idrico</span><span class="prodotto-valore-proprieta">7,0 %tq</span></p>

@@ -19,7 +19,7 @@
             <div class="contenitore">
                 <div class="box-mezzo slider-box-testo">
                     <h1 class="text-bolder text-white">Pellet di legno, conifera e latifoglia, privi di corteccia.</h1>
-                    <p class="text-white">PEPITO, prodotto naturale di alta qualità certificato in classe A1</p>
+                    <p class="text-white">FIREX, prodotto naturale di alta qualità certificato in classe A1</p>
                     <div class="btn-container">
                         <a href="tel:+390309959721" class="btn-white btn-phone">Chiama ora</a>
                         <a href="#contatti" class="btn-white btn-mail">Scrivi ora</a>
@@ -34,13 +34,14 @@
             <div class="contenitore">
                 <div class="box-mezzo slider-box-testo">
                     <h1 class="text-bolder text-white">Pellet di legno, conifera e latifoglia, privi di corteccia.</h1>
-                    <p class="text-white">PEPITO, prodotto naturale di alta qualità certificato in classe A1</p>
+                    <p class="text-white">HOLZPELLET, prodotto naturale di alta qualità certificato in classe A1</p>
                     <div class="btn-container">
                         <a href="tel:+390309959721" class="btn-white btn-phone">Chiama ora</a>
                         <a href="#contatti" class="btn-white btn-mail">Scrivi ora</a>
                     </div>
                 </div>
                 <div class="box-mezzo slider-box-img">
+
                     <img src="<?= $URLASSOLUTO ?>img/Holzpellet-slider.png" height="500px" alt="Pepito">
                 </div>
             </div>
