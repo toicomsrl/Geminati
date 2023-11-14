@@ -51,6 +51,11 @@
                 <input type="tel" placeholder="Telefono" name="Telefono" value="" class="inputText_contatti">
                 <input type="email" required="required" placeholder="Email" name="Email" value="" class="inputText_contatti">
                 <textarea required="required" placeholder="Il tuo messaggio" name="Messaggio" value="" class="inputText_contatti inputTextArea_contatti"></textarea>
+                <!-- Honeypot -->
+                <div style="display:none;">
+                    <input type="text" name="honeypot">
+                </div>
+                <!-- End honeypot -->
                 <p style="margin-block: 0; margin-bottom: 5px">Controllo Antispam<b> 4 + 2</b> = </p>
                 <input class="inputText_contatti" placeholder="Inserisci il risultato" name="risultato" required="required" type="number" min="6" max="6" maxlength="1" autocomplete="off">
                 <div class="pulizia"></div>

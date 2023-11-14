@@ -13,7 +13,7 @@ $desc = "";
 $fotosocial = "";
 $formok = "";
 
-$sitoweb = "geminati-local.it/";
+$sitoweb = "geminati.it/";
 
 if ($_SERVER["SERVER_NAME"] == "localhost") {
     $URLASSOLUTO = "http://localhost/" . $sitoweb;
@@ -98,6 +98,10 @@ include_once("dati-seo.php");
     <link rel="stylesheet" type="text/css" href="<?= $URLASSOLUTO ?>css/simplelightbox.css">
     <link href="<?= $URLASSOLUTO ?>css/animate.css" rel="stylesheet" type="text/css" />
     <link href="<?= $URLASSOLUTO ?>css/style.css" rel="stylesheet" type="text/css" />
+
+    <!-- Canonical -->
+
+    <link rel="canonical" href="<?= $URLASSOLUTO . $urlmodules ?>">
 
     <?php if ($GTM != "") { ?>
         <!-- Google Tag Manager -->

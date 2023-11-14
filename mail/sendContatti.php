@@ -14,12 +14,13 @@ if (strstr($_SERVER["HTTP_REFERER"], "geminati.it") && $_POST != "") {
 	$Messaggio = $_POST['Messaggio'];
 	$Provenienza = $_SERVER["HTTP_REFERER"];
 	$Risultato = $_POST['risultato'];
+	$Honeypot = $_POST['honeypot'];
 
 	$oggetto = "GEMINATI - Richiesta dal WEB";
 
 
 
-	if (($Email == "") || ($Nome == "") || ($Messaggio == "") || ($Risultato != "6")) { // || ($Controllo != "") || ($Risultato != "6")) {
+	if (($Email == "") || ($Nome == "") || ($Messaggio == "") || ($Risultato != "6") || $Honeypot != "") { // || ($Controllo != "") || ($Risultato != "6")) {
 		header("location: ../contatti-ko.html#ko") or die;
 	} else {
 

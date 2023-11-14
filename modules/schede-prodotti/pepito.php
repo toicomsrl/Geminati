@@ -59,7 +59,7 @@
                     </div>
                 </div>
             </a>
-            <a href="<?= $URLASSOLUTO ?>schede-prodotti/Europellet.html">
+            <a href="<?= $URLASSOLUTO ?>schede-prodotti/europellet.html">
                 <div class="mini-card">
                     <div class="mini-card-img">
                         <img src="<?= $URLASSOLUTO ?>img/Europellet.jpg" alt="Europellet">
