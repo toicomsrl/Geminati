@@ -124,6 +124,51 @@ $(document).on("ready", function () {
 			}
 		]
 	})
+
+	$(".carusel-azienda").slick({
+		infinite: true,
+		arrows: false,
+		autoplay: true,
+		autoplaySpeed: 3500,
+		speed: 1500,
+		slidesToShow: 4,
+		slidesToScroll: 1,
+		centerMode: true,
+		responsive: [
+			{
+				breakpoint: 1600,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1,
+					centerMode: false
+				}
+			},
+			{
+				breakpoint: 1100,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 2,
+					centerMode: false
+				}
+			},
+			{
+				breakpoint: 750,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					centerMode: true
+				}
+			},
+			{
+				breakpoint: 540,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					centerMode: false
+				}
+			}
+		]
+	})
 })
 
 // CHIUDI POP UP

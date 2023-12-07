@@ -17,10 +17,11 @@
             <p class="prodotto-proprieta"><span class="prodotto-nome-proprieta">Potere calorifico inferiore</span><span class="prodotto-valore-proprieta">Mj/kg 17,50 - Kwh/kg 4,86</span></p>
             <p class="prodotto-proprieta"><span class="prodotto-nome-proprieta">Massa volumica sterica</span><span class="prodotto-valore-proprieta">690 kg/m&sup3;</span></p>
             <div class="prodotto-download">
-                <a href="<?= $URLASSOLUTO ?>doc/scheda-tecnica-holzpellet.pdf" target="_blank"><img src="<?= $URLASSOLUTO ?>img/download-scheda-tecnica.png" alt=""></a>
-                <a href="#contatti"><img src="<?= $URLASSOLUTO ?>img/richiesta-info.png" alt=""></a>
+                <a href="<?= $URLASSOLUTO ?>doc/scheda-tecnica-holzpellet.pdf" class="btn-white btn-doc">Scarica scheda prodotto</a>
+                <a href="#contatti" class="btn-white btn-phone">Richiedi informazioni</a>
             </div>
         </div>
+        <div class="pulizia"></div>
     </div>
 </section>
 <section class="sect-prodotti">
@@ -92,4 +93,5 @@
         </div>
     </div>
 </section>
+<?php include_once("modules/blocchi/produzione-lettiere-cippato.php") ?>
 <?php include_once("modules/blocchi/certificazione-enplus.php") ?>

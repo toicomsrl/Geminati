@@ -100,7 +100,6 @@ include_once("dati-seo.php");
     <link href="<?= $URLASSOLUTO ?>css/style.css" rel="stylesheet" type="text/css" />
 
     <!-- Canonical -->
-
     <link rel="canonical" href="<?= $URLASSOLUTO . $urlmodules ?>">
 
     <?php if ($GTM != "") { ?>

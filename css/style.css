@@ -380,6 +380,9 @@ li {
 	border: 0px;
 	border-radius: 10px;
 }
+.inputText_contatti-bg-dark {
+	background: #f5f3ef;
+}
 .inputText_contatti2 {
 	font-size: 1em;
 	border: 0px;
@@ -420,7 +423,7 @@ li {
 	font-weight: 700;
 	margin: auto;
 	display: table;
-	margin-top: 15px;
+	margin-top: 40px;
 }
 .invia-form:hover {
 	background: #428118;
@@ -855,6 +858,13 @@ section {
 	background-size: 40px;
 }
 
+.btn-doc {
+	background: url("../img/doc-ico.jpg") no-repeat #fff;
+	background-position-y: center;
+	background-position-x: 95%;
+	background-size: 40px;
+}
+
 .bg-white {
 	background: #fff;
 }
@@ -999,13 +1009,13 @@ section {
 }
 
 .card-lettiere {
-	background: url("../img/lettiere-animali.jpg");
+	background: url("../img/cippato-legno.jpg");
 	background-repeat: no-repeat;
 	background-position: center center;
 }
 
 .card-cippato {
-	background: url("../img/cippato-legno.jpg");
+	background: url("../img/produzione-cippato-geminati.jpg");
 	background-repeat: no-repeat;
 	background-position: center center;
 }
@@ -1121,9 +1131,9 @@ section {
 }
 
 .img-prodotti {
-	background: url("../img/FIREX-AMBIENTE.jpg");
+	background: url("../img/pellet-geminati-collezione.jpg");
 	background-repeat: no-repeat;
-	background-position: center center;
+	background-position: top center;
 	background-size: cover;
 }
 
@@ -1296,9 +1306,12 @@ section {
 }
 
 .sect-video {
-	height: 600px;
 	background: #fff;
 	padding-block: 100px;
+}
+
+.carusel-azienda img {
+	height: 250px;
 }
 
 /** CERTIFICAZIONI **/
@@ -1369,6 +1382,7 @@ footer {
 }
 
 .footer-row-2 {
+	padding-inline: 20px;
 	margin-bottom: 50px;
 }
 
@@ -1389,6 +1403,17 @@ footer {
 		padding-inline: 20px;
 		font-size: 1rem;
 	}
+}
+
+.img-contatti {
+	background: url("../img/uffici-geminati-pellet.jpg");
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: cover;
+}
+
+#contatti {
+	margin-bottom: 50px;
 }
 
 /*SLICK*/

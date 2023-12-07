@@ -65,9 +65,46 @@
         </div>
         <div class="pulizia"></div>
     </section>
-    <section>
-        <div class="sect-video">
-
+    <section class="sect-video">
+        <div class="sect-video-inner">
+            <div class="carusel-azienda">
+                <div>
+                    <img src="img/gallery/a-MD5_0282-min.jpg" alt="">
+                </div>
+                <div>
+                    <img src="img/gallery/b-DSC_1698-min.jpg" alt="">
+                </div>
+                <div>
+                    <img src="img/gallery/DSC_2940-min.jpg" alt="">
+                </div>
+                <div>
+                    <img src="img/gallery/DSC_2955-min.jpg" alt="">
+                </div>
+                <div>
+                    <img src="img/gallery/DSC_2978-min.jpg" alt="">
+                </div>
+                <div>
+                    <img src="img/gallery/DSC_2984-min.jpg" alt="">
+                </div>
+                <div>
+                    <img src="img/gallery/r-DSC_1882-min.jpg" alt="">
+                </div>
+                <div>
+                    <img src="img/gallery/s-MD5_6813-min.jpg" alt="">
+                </div>
+                <div>
+                    <img src="img/gallery/v-DSC_2821-min.jpg" alt="">
+                </div>
+                <div>
+                    <img src="img/gallery/z-DSC_2933-min.jpg" alt="">
+                </div>
+                <div>
+                    <img src="img/gallery/z-MD5_0229-min.jpg" alt="">
+                </div>
+                <div>
+                    <img src="img/gallery/z-MD5_6573-min.jpg" alt="">
+                </div>
+            </div>
         </div>
         <div class="pulizia"></div>
     </section>
