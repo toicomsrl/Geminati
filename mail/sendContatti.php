@@ -1,26 +1,46 @@
 <?php
+require_once "blacklist.php";
 error_reporting(E_ERROR);
 
 if (strstr($_SERVER["HTTP_REFERER"], "geminati.it") && $_POST != "") {
 
+	//Gestione blacklist
+	$blacklist = new blacklist();
+
+	//Recupero la secret key per il recaptcha dall'environment
+	$env = parse_ini_file('../.env');
+	$recaptchaSecret = $env['GOOGLE_RECAPTCHA_SECRET'];
 
 	// Richiamo variabili
-	//$Controllo = $_POST['control'];
-	$Nome = $_POST['Nome'];
 	$Azienda = $_POST['Azienda'];
-	$Indirizzo = $_POST['Indirizzo'];
-	$Telefono = $_POST['Telefono'];
+	$Comune = $_POST['Comune'];
 	$Email = $_POST['Email'];
-	$Messaggio = $_POST['Messaggio'];
 	$Provenienza = $_SERVER["HTTP_REFERER"];
-	$Risultato = $_POST['risultato'];
 	$Honeypot = $_POST['honeypot'];
 
 	$oggetto = "GEMINATI - Richiesta dal WEB";
 
+	if (isset($_POST['g-recaptcha-response'])) {
+		$reCaptchaId = $_POST['g-recaptcha-response'];
+	} else {
+		header("location: ../contatti-ko.html#ko") or die;
+	}
+
+	//Verifico se la mail è in blacklist e in tal caso non faccio nulla e mando direttamente al form di errore
+	if ($Email != "") {
+		$domain = explode(
+			"@",
+			$Email
+		)[1];
+		if ($blacklist->isDomainInBlacklist($domain)) {
+			header("location: ../contatti-ko.html#ko") or die;
+		}
+	}
+
+	$responseCaptcha = json_decode(file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret=' . $recaptchaSecret . '&response=' . $reCaptchaId));
 
 
-	if (($Email == "") || ($Nome == "") || ($Messaggio == "") || ($Risultato != "6") || $Honeypot != "") { // || ($Controllo != "") || ($Risultato != "6")) {
+	if ($Azienda == "" || $Comune == "" || $Email == "" || $Honeypot != "" || $responseCaptcha->success == false) {
 		header("location: ../contatti-ko.html#ko") or die;
 	} else {
 
@@ -28,14 +48,11 @@ if (strstr($_SERVER["HTTP_REFERER"], "geminati.it") && $_POST != "") {
 		$contenuto_file_log = "Email del " . date("j-m-Y h.i", time()) . ".\n";
 		$contenuto_file_log .= "------------------------------------------------\n\n";
 		$contenuto_file_log .= "Oggetto: " . $oggetto . "\n\n";
-		$contenuto_file_log .= "Nome: " . $Nome . "\n\n";
-		$contenuto_file_log .= "Email: " . $Email . "\n";
-		$contenuto_file_log .= "Telefono: " . $Telefono . "\n\n";
+		$contenuto_file_log .= "Azienda: " . $Azienda . "\n\n";
+		$contenuto_file_log .= "Comune: " . $Comune . "\n";
 		$contenuto_file_log .= "Pagina di provenienza: " . $Provenienza . "\n\n";
 		$contenuto_file_log .= "------------------------------------------------\n\n";
 		$contenuto_file_log .= "Dettagli richiesta:\n" . $Messaggio;
-
-
 
 		// Intestazioni per il cliente
 		$intestazioni  = "MIME-Version: 1.0\r\n";
@@ -56,9 +73,9 @@ if (strstr($_SERVER["HTTP_REFERER"], "geminati.it") && $_POST != "") {
 
 
 		$oggetto2 = "Richiesta informazioni | geminati.it";
-		$body = "Gentile " . $Nome;
-		$body .= "\n\ngrazie per la tua richiesta.";
-		$body .= "\nA breve sarai ricontattato e capiremo insieme le tue esigenze.";
+		$body = "Gentile " . $Azienda;
+		$body .= "\n\ngrazie per la sua richiesta.";
+		$body .= "\nA breve sarà ricontattata e capiremo insieme le tue esigenze.";
 
 		$body .= "\n______________________________________________\n\n";
 		$body .= "Geminati Pierino s.r.l.\nVia Artigianale 3 – 25020, Cigole (BS) \nTel: 030 9959721\n\n";

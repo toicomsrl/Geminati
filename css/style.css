@@ -1523,3 +1523,15 @@ footer {
 		font-size: 2.2rem;
 	}
 }
+
+/** RECAPTCHA GOOGLE **/
+.g-recaptcha {
+	margin-block: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+input[type="submit"]:disabled {
+	background-color: #6e6e6e;
+	cursor: not-allowed;
+}

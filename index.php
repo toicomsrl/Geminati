@@ -2,6 +2,9 @@
 //var_dump($_GET);
 //ERROR_REPORTING(0);
 
+$env = parse_ini_file('.env');
+$recaptchaKey = $env['GOOGLE_RECAPTCHA_KEY'];
+
 $URLASSOLUTO = "";
 $GTM = "";
 $modulo = "";
@@ -163,6 +166,8 @@ include_once("dati-seo.php");
             slidetop()
         }, 6000);
     </script>
+    <!-- Google recaptcha -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </body>
 
 </html>

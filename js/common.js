@@ -244,3 +244,8 @@ vociMenu.forEach((element) => {
 		}
 	})
 })
+
+//Abilitazione pulsante form per recaptcha
+function enableBtn() {
+	document.getElementById("invia").disabled = false
+}
