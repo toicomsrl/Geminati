@@ -2,12 +2,12 @@
 <section class="first-section">
     <div class="contenitore">
         <div class="box-terzo box-img-prodotto">
-            <img src="<?= $URLASSOLUTO ?>img/Holzpellet.jpg" alt="">
+            <img src="<?= $URLASSOLUTO ?>img/Ekowood.jpg" alt="">
         </div>
         <div class="box-dueterzi box-desc-prodotto">
-            <h1 class="text-black">Holz pellet</h1>
-            <p>Pellet di legno vergine, ricavato da conifera e latifoglia privi di corteccia.<br>Prodotto naturale di alta qualità.<br>HOLZ PELLET è certificato in classe A1 (la qualità più elevata), soddisfa ampiamente la norma 17225‐2 secondo lo standard europeo En Plus, il massimo della certificazione in termini di qualità e controllo continuo sul prodotto.</p>
-            <img src="<?= $URLASSOLUTO ?>img/En_plus_IT_011.png" alt="">
+            <h1 class="text-black">Ekowood</h1>
+            <p>Pellet di legno vergine, ricavato da abete bianco privo di corteccia.<br>Prodotto naturale di qualità superiore.<br>Caratterizzato da un colore bianco, tipico del legno di abete con un bassissimo residuo di ceneri ed un elevato potere calorifico.<br>FIREX è certificato in classe A1 (la qualità più elevata), soddisfa ampiamente la norma 17225‐2 secondo lo standard europeo En Plus, il massimo della certificazione in termini di qualità e controllo continuo sul prodotto.</p>
+            <img src="<?= $URLASSOLUTO ?>img/En_plus_IT_344.png" alt="">
             <p class="prodotto-proprieta"><span class="prodotto-nome-proprieta">Materia prima di origine</span><span class="prodotto-valore-proprieta">Pellet di legno ricavato da conifera e latifoglia decortecciata</span></p>
             <p class="prodotto-proprieta"><span class="prodotto-nome-proprieta">Classe diametrica</span><span class="prodotto-valore-proprieta">6 &plusmn; 1 mm</span></p>
             <p class="prodotto-proprieta"><span class="prodotto-nome-proprieta">Lunghezza pellet</span><span class="prodotto-valore-proprieta">3,15 - 40 mm</span></p>
@@ -18,7 +18,7 @@
             <p class="prodotto-proprieta"><span class="prodotto-nome-proprieta">Potere calorifico inferiore</span><span class="prodotto-valore-proprieta">&ge; 4,6 kWh/kg</span></p>
             <p class="prodotto-proprieta"><span class="prodotto-nome-proprieta">Densità apparente</span><span class="prodotto-valore-proprieta"> 600 &le; dens.app. &le; 750 kg/m<sup>3</sup></span></p>
             <div class="prodotto-download">
-                <a href="<?= $URLASSOLUTO ?>doc/Scheda_Holzpellet_2024.pdf" class="btn-white btn-doc">Scarica scheda prodotto</a>
+                <a href="<?= $URLASSOLUTO ?>doc/Scheda_Firex_2024.pdf" class="btn-white btn-doc">Scarica scheda prodotto</a>
                 <a href="#contatti" class="btn-white btn-phone">Richiedi informazioni</a>
             </div>
         </div>
@@ -46,14 +46,14 @@
                     </div>
                 </div>
             </a>
-            <a href="<?= $URLASSOLUTO ?>schede-prodotti/firex.html">
+            <a href="<?= $URLASSOLUTO ?>schede-prodotti/holzpellet.html">
                 <div class="mini-card">
                     <div class="mini-card-img">
-                        <img src="<?= $URLASSOLUTO ?>img/firex.jpg" alt="Firex">
+                        <img src="<?= $URLASSOLUTO ?>img/Holzpellet.jpg" alt="Holzpellet">
                     </div>
                     <div class="mini-card-text">
                         <p class="mini-card-title">
-                            FIREX
+                            HOLZPELLET
                         </p>
                         <p class="mini-card-desc">
                             Conifera e latifoglia,<br>Classe A1
@@ -79,7 +79,7 @@
             <a href="<?= $URLASSOLUTO ?>schede-prodotti/pellet-sfuso.html">
                 <div class="mini-card">
                     <div class="mini-card-img">
-                        <img src="<?= $URLASSOLUTO ?>img/pellet-sfuso.jpg" alt="Pellet sfuso">
+                        <img src="<?= $URLASSOLUTO ?>img/pellet-sfuso.jpg" alt="Pellet-sfuso">
                     </div>
                     <div class="mini-card-text">
                         <p class="mini-card-title">

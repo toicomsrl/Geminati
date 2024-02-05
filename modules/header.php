@@ -2,8 +2,11 @@
 
 $class = "";
 
-if ($modulo == 'prodotti' || $fold == 'schede-prodotti' || $modulo == 'certificazioni' || $modulo == 'contatti' || $modulo == "contatti-ok" || $modulo == "contatti-ko") {
+if ($modulo == 'pellet' || $fold == 'schede-prodotti' || $modulo == 'certificazioni' || $modulo == 'contatti' || $modulo == "contatti-ok" || $modulo == "contatti-ko" || $modulo == "lettiere-animali" || $modulo == "cippato-di-legno") {
     $class = 'text-black';
+    $submIcon = 'black';
+} else {
+    $submIcon = 'white';
 }
 ?>
 
@@ -20,7 +23,15 @@ if ($modulo == 'prodotti' || $fold == 'schede-prodotti' || $modulo == 'certifica
         </div>
         <ul id="nav-mobile">
             <li><a href="<?= $URLASSOLUTO ?>" class="menu-item <?php echo $class; ?>">HOME</a></li>
-            <li><a href="<?= $URLASSOLUTO ?>prodotti.html" class="menu-item <?php echo $class; ?>">PRODOTTI</a></li>
+            <li>
+                <a href="javascript:void(0);" class="subm <?php echo $submIcon; ?> menu-item no-mobile <?php echo $class; ?> no-clickable">PRODOTTI</a>
+                <a href="javascript:mostra_terzo('ul-prodotti' , 'item-prodotti')" id="item-prodotti" class="subm <?php echo $submIcon; ?> si-mobile">PRODOTTI</a>
+                <ul id="ul-prodotti">
+                    <li><a href="<?= $URLASSOLUTO ?>pellet.html">Pellet</a></li>
+                    <li><a href="<?= $URLASSOLUTO ?>cippato-di-legno.html">Cippato di legno</a></li>
+                    <li><a href="<?= $URLASSOLUTO ?>lettiere-animali.html">Lettiere per animali</a></li>
+                </ul>
+            </li>
             <li><a href="<?= $URLASSOLUTO ?>certificazioni.html" class="menu-item <?php echo $class; ?>">CERTIFICAZIONI</a></li>
             <li><a href="<?= $URLASSOLUTO ?>azienda.html" class="menu-item <?php echo $class; ?>">AZIENDA</a></li>
             <?php if ($modulo == "home") { ?>

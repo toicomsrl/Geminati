@@ -4,7 +4,7 @@
         <div class="contenitore box-img">
             <div class="box-terzo box-img__text">
                 <h1 class="text-black fs-48px">Certificazioni e associazioni</h1>
-                <p>La norma EN 17225 definisce gli standard europei per i pellet, e la certificazione ENplus si basa su questa norma. L'obiettivo della certificazione è garantire che i prodotti commercializzati rispettino i requisiti di qualità e costanza. Grazie a ENplus, è possibile acquistare pellet di alta qualità in tutta Europa, con un sistema di certificazione trasparente che esamina l'intera catena di produzione, dal materiale prima alla consegna al cliente finale. </p>
+                <p>Il sistema ENplus è lo schema di certificazione per il pellet di legno il cui logo indica la qualità del pellet a clienti e consumatori in modo trasparente e verificabile grazie a ENplus è possibile acquistare pellet di alta qualità in tutta Europa, attraverso linee guida viene gestita la qualità lungo tutta la catena di approvvigionamento dalla scelta della materia prima alla consegna al cliente finale </p>
             </div>
             <div class="box-dueterzi box-img__img img-certificazioni">
 
@@ -17,16 +17,16 @@
         <div class="contenitore">
             <div class="box-mezzo p-inline-4">
                 <h2 class="text-black text-bolder">
-                    Norma EN e <br>le classi di <br>qualità
+                    Normativa e <br>classi di <br>qualità
                 </h2>
             </div>
             <div class="box-mezzo sect-catalogo__col-1">
                 <p>
-                    La norma EN 17225-2 introduce tre classi di qualità:
+                    La norma EN 17225-2 introduce tre classi:
                 <ul>
-                    <li>CLASSE A1, che corrisponde alla qualità più elevata, con un contenuto di ceneri massimo dello 0,7%</li>
-                    <li>CLASSE A2, caratterizzata da un contenuto di ceneri ≤1.2</li>
-                    <li>CLASSE B, caratterizzata da un contenuto di ceneri ≤2; La materia prima utilizzata può essere sia segatura, sia corteccia. Il pellet appartenente a questa categoria è destinato a grandi impianti per uso commerciale e/o industriale.</li>
+                    <li>CLASSE A1, che corrisponde alla qualità più elevata, con un contenuto di ceneri massimo dello w-% &leq; 0,70 </li>
+                    <li>CLASSE A2, caratterizzata da un contenuto di ceneri w-% &leq; 1,20</li>
+                    <li>CLASSE B, caratterizzata da un contenuto di ceneri w-% &leq; 2,00 La materia prima utilizzata può essere sia segatura, sia corteccia. Il pellet appartenente a questa categoria è destinato a grandi impianti per uso commerciale e/o industriale.</li>
                 </ul>
                 </p>
                 <p>
@@ -38,7 +38,7 @@
                 <p>I punti essenziali sui quali si basa il sistema di certificazione Enplus sono i seguenti:
                 <ol>
                     <li>Requisiti di produzione del pellet e garanzia di qualità</li>
-                    <li>Requisiti del prodotto (UNI EN 17225-2)</li>
+                    <li>Requisiti del prodotto</li>
                     <li>Requisiti per l’etichettatura, la logistica e lo stoccaggio intermedio</li>
                     <li>Requisiti di consegna al consumatore finale</li>
                 </ol>
@@ -67,12 +67,12 @@
         <div class="contenitore">
             <div class="box-mezzo p-inline-4">
                 <h2 class="text-black text-bolder">
-                    Geminati <br>aderisce alla <br>AIEL
+                    Geminati <br>aderisce ad <br>AIEL
                 </h2>
             </div>
             <div class="box-mezzo sect-catalogo__col-1">
                 <p>
-                    L'AIEL (Associazione Italiana Energie Agroforestali) è un'associazione che rappresenta gli operatori del settore delle biomasse solide, come il legno e i residui agricoli, che vengono utilizzati come fonte di energia rinnovabile. L'associazione promuove lo sviluppo del settore delle biomasse solide in Italia e si occupa di questioni come la ricerca, la formazione, la promozione di politiche pubbliche e la rappresentanza degli interessi degli operatori del settore.
+                    AIEL Associazione Itaaliana Energie Agroforestali, è l'associazione delle imprese che operano lungo la filiera legno - energia: dai produttori di biocombustibili legnosi (legno, scippato, pelle) ai produttori delle tecnologie per trasformare questi biocombustibili in calore ed energia (stufe, inserti camino, caldaie, gruppi di cogenerazione) L'obiettivo è quello di garantire la corretta e sostenibile valorizzazione energetica delle biomasse agroforestali in particolare i biocombustibili legnosi a tutti i livelli dal bosco al camino.
                 </p>
             </div>
             <div class="pulizia"></div>

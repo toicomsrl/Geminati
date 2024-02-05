@@ -205,47 +205,72 @@ window.onscroll = function () {
 }
 
 function scrollFunction() {
-	if (document.documentElement.scrollTop > 1) {
-		document.querySelector(".header").style.background = "#f5f3ef"
+	if (!isMobileScreenSize()) {
+		if (document.documentElement.scrollTop > 1) {
+			document.querySelector(".header").style.background = "#f5f3ef"
 
-		const menuItems = document.querySelectorAll(".menu-item")
-		menuItems.forEach((element) => {
-			element.style.color = "#000"
-		})
-	} else {
-		const hiddenPElement = document.querySelector(".nontivedo")
-		document.querySelector(".header").style.background = "transparent"
-
-		if (!hiddenPElement) {
 			const menuItems = document.querySelectorAll(".menu-item")
 			menuItems.forEach((element) => {
-				element.style.color = "#FFF"
-				element.style.color.hover
+				element.style.color = "#000"
 			})
+
+			const hasSubMenuElement = document.querySelectorAll(".subm")
+			hasSubMenuElement.forEach((element) => {
+				if (!element.classList.contains("black")) {
+					element.classList.remove("white")
+					element.classList.add("black")
+				}
+			})
+		} else {
+			const hiddenPElement = document.querySelector(".nontivedo")
+			document.querySelector(".header").style.background = "transparent"
+
+			if (!hiddenPElement) {
+				const menuItems = document.querySelectorAll(".menu-item")
+				menuItems.forEach((element) => {
+					element.style.color = "#FFF"
+					element.style.color.hover
+				})
+
+				const hasSubMenuElement = document.querySelectorAll(".subm")
+				console.log(hasSubMenuElement)
+				hasSubMenuElement.forEach((element) => {
+					element.classList.remove("black")
+					element.classList.add("white")
+				})
+			}
 		}
 	}
 }
 
 //Hover sugli elementi del menù
-var vociMenu = document.querySelectorAll(".menu-item")
-vociMenu.forEach((element) => {
-	element.addEventListener("mouseover", function () {
-		this.style.color = "#c00a05"
-	})
-	element.addEventListener("mouseout", function () {
-		if (document.documentElement.scrollTop > 1) {
-			this.style.color = "#000"
-		} else {
-			if (!document.querySelector(".nontivedo")) {
-				this.style.color = "#FFF"
-			} else {
+if (!isMobileScreenSize()) {
+	var vociMenu = document.querySelectorAll(".menu-item")
+	vociMenu.forEach((element) => {
+		element.addEventListener("mouseover", function () {
+			this.style.color = "#c00a05"
+		})
+		element.addEventListener("mouseout", function () {
+			if (document.documentElement.scrollTop > 1) {
 				this.style.color = "#000"
+			} else {
+				if (!document.querySelector(".nontivedo")) {
+					this.style.color = "#FFF"
+				} else {
+					this.style.color = "#000"
+				}
 			}
-		}
+		})
 	})
-})
+}
 
 //Abilitazione pulsante form per recaptcha
 function enableBtn() {
 	document.getElementById("invia").disabled = false
+}
+
+function isMobileScreenSize() {
+	if (window.innerWidth <= 800) return true
+
+	return false
 }

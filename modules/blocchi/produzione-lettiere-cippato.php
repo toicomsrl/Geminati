@@ -7,14 +7,14 @@
                 <div class="card-text">
                     <p class="card-title">Lettiere per animali</p>
                     <p class="card-desc">Naturali ed ecologiche, adatte ad <br>ogni tipo di animale</p>
-                    <a href="<?= $URLASSOLUTO ?>prodotti.html" class="card-button">CATALOGO</a>
+                    <a href="<?= $URLASSOLUTO ?>lettiere-animali.html" class="card-button">CATALOGO</a>
                 </div>
             </div>
             <div class="card card-cippato">
                 <div class="card-text">
                     <p class="card-title">Cippato di legno</p>
                     <p class="card-desc">Biocombustibile ecologico utilizzato in impianti industriali</p>
-                    <a href="<?= $URLASSOLUTO ?>prodotti.html" class="card-button">CATALOGO</a>
+                    <a href="<?= $URLASSOLUTO ?>cippato-di-legno.html" class="card-button">CATALOGO</a>
                 </div>
             </div>
         </div>

@@ -6,18 +6,19 @@
         </div>
         <div class="box-dueterzi box-desc-prodotto">
             <h1 class="text-black">Pepito</h1>
-            <p>Pellet di legno vergine, ricavato da conifera e latifoglia privi di corteccia.<br>Prodotto naturale di alta qualità.<br>PEPITO è certificato in classe A1 (la qualità più elevata), soddisfa ampiamente la norma 17225‐2 secondo lo standard europeo En Plus, il massimo della certificazione in termini di qualità e controllo continuo sul prodotto.</p>
-            <img src="<?= $URLASSOLUTO ?>img/logo-en-plus.png" alt="">
-            <p class="prodotto-proprieta"><span class="prodotto-nome-proprieta">Materia prima di origine</span><span class="prodotto-valore-proprieta">Misto Confifera e Latifoglia</span></p>
-            <p class="prodotto-proprieta"><span class="prodotto-nome-proprieta">Classe diametrica</span><span class="prodotto-valore-proprieta">6.0mm</span></p>
-            <p class="prodotto-proprieta"><span class="prodotto-nome-proprieta">Contenuto idrico</span><span class="prodotto-valore-proprieta">7,0 %tq</span></p>
-            <p class="prodotto-proprieta"><span class="prodotto-nome-proprieta">Contenuto ceneri</span><span class="prodotto-valore-proprieta">0,47 %secco</span></p>
-            <p class="prodotto-proprieta"><span class="prodotto-nome-proprieta">Durabilità meccanica</span><span class="prodotto-valore-proprieta">98,8 %tq</span></p>
-            <p class="prodotto-proprieta"><span class="prodotto-nome-proprieta">Contenuti in fini</span><span class="prodotto-valore-proprieta">0,2 %tq</span></p>
-            <p class="prodotto-proprieta"><span class="prodotto-nome-proprieta">Potere calorifico inferiore</span><span class="prodotto-valore-proprieta">Mj/kg 17,50 - Kwh/kg 4,86</span></p>
-            <p class="prodotto-proprieta"><span class="prodotto-nome-proprieta">Massa volumica sterica</span><span class="prodotto-valore-proprieta">690 kg/m&sup3;</span></p>
+            <p>Pellet di legno vergine, ricavato da conifera e latifoglia privi di corteccia.<br>Prodotto naturale di alta qualità.<br>PEPITO è certificato in classe ENplus A1 (la qualità più elevata), soddisfa ampiamente la norma 17225‐2 secondo lo standard europeo ENplus, il massimo della certificazione in termini di qualità e controllo continuo sul prodotto.</p>
+            <img src="<?= $URLASSOLUTO ?>img/En_plus_IT_011.png" alt="">
+            <p class="prodotto-proprieta"><span class="prodotto-nome-proprieta">Materia prima di origine</span><span class="prodotto-valore-proprieta">Pellet di legno ricavato da conifera e latifoglia decortecciata</span></p>
+            <p class="prodotto-proprieta"><span class="prodotto-nome-proprieta">Classe diametrica</span><span class="prodotto-valore-proprieta">6 &plusmn; 1 mm</span></p>
+            <p class="prodotto-proprieta"><span class="prodotto-nome-proprieta">Lunghezza pellet</span><span class="prodotto-valore-proprieta">3,15 - 40 mm</span></p>
+            <p class="prodotto-proprieta"><span class="prodotto-nome-proprieta">Contenuto idrico</span><span class="prodotto-valore-proprieta">&le; 10 w-%tq</span></p>
+            <p class="prodotto-proprieta"><span class="prodotto-nome-proprieta">Contenuto in ceneri</span><span class="prodotto-valore-proprieta">&le; 0,7 w-%secco</span></p>
+            <p class="prodotto-proprieta"><span class="prodotto-nome-proprieta">Durabilità meccanica</span><span class="prodotto-valore-proprieta">&ge; 98,8 w-%tq</span></p>
+            <p class="prodotto-proprieta"><span class="prodotto-nome-proprieta">Particelle fini</span><span class="prodotto-valore-proprieta">&le; 0,5 w-%tq</span></p>
+            <p class="prodotto-proprieta"><span class="prodotto-nome-proprieta">Potere calorifico inferiore</span><span class="prodotto-valore-proprieta">&ge; 4,6 kWh/kg</span></p>
+            <p class="prodotto-proprieta"><span class="prodotto-nome-proprieta">Densità apparente</span><span class="prodotto-valore-proprieta"> 600 &le; dens.app. &le; 750 kg/m<sup>3</sup></span></p>
             <div class="prodotto-download">
-                <a href="<?= $URLASSOLUTO ?>doc/scheda-tecnica-pepito.pdf" class="btn-white btn-doc">Scarica scheda prodotto</a>
+                <a href="<?= $URLASSOLUTO ?>doc/Scheda_Pepito_2024.pdf" class="btn-white btn-doc">Scarica scheda prodotto</a>
                 <a href="#contatti" class="btn-white btn-phone">Richiedi informazioni</a>
             </div>
         </div>

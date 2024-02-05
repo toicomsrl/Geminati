@@ -14,7 +14,7 @@
                             PEPITO
                         </p>
                         <p class="mini-card-desc">
-                            Conifera e latifoglia,<br>Classe A1
+                            Conifera e latifoglia,<br>certificato ENplus A1
                         </p>
                     </div>
                 </div>
@@ -29,7 +29,7 @@
                             FIREX
                         </p>
                         <p class="mini-card-desc">
-                            Conifera e latifoglia,<br>Classe A1
+                            Conifera e latifoglia,<br>certificato ENplus A1
                         </p>
                     </div>
                 </div>
@@ -43,7 +43,7 @@
                         HOLZPELLET
                     </p>
                     <p class="mini-card-desc">
-                        Conifera e latifoglia,<br>Classe A1
+                        Conifera e latifoglia,<br>certificato ENplus A1
                     </p>
                 </div>
             </div>
@@ -56,7 +56,20 @@
                         EUROPELLET
                     </p>
                     <p class="mini-card-desc">
-                        Conifera e latifoglia,<br>Classe A1
+                        Conifera e latifoglia,<br>certificato ENplus A1
+                    </p>
+                </div>
+            </div>
+            <div class="mini-card">
+                <div class="mini-card-img">
+                    <img src="<?= $URLASSOLUTO ?>img/Ekowood.jpg" alt="Ekowood">
+                </div>
+                <div class="mini-card-text">
+                    <p class="mini-card-title">
+                        EKOWOOD
+                    </p>
+                    <p class="mini-card-desc">
+                        Conifera e latifoglia,<br>certificato ENplus A1
                     </p>
                 </div>
             </div>
@@ -69,7 +82,7 @@
                         PELLET SFUSO
                     </p>
                     <p class="mini-card-desc">
-                        Conifera e latifoglia,<br>Classe A1
+                        Conifera e latifoglia,<br>certificato ENplus A1
                     </p>
                 </div>
             </div>
