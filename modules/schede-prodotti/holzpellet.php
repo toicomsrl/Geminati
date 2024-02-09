@@ -6,7 +6,7 @@
         </div>
         <div class="box-dueterzi box-desc-prodotto">
             <h1 class="text-black">Holz pellet</h1>
-            <p>Pellet di legno vergine, ricavato da conifera e latifoglia privi di corteccia.<br>Prodotto naturale di alta qualità.<br>HOLZ PELLET è certificato in classe A1 (la qualità più elevata), soddisfa ampiamente la norma 17225‐2 secondo lo standard europeo En Plus, il massimo della certificazione in termini di qualità e controllo continuo sul prodotto.</p>
+            <p>Pellet di legno vergine, ricavato da conifera e latifoglia privi di corteccia.<br>Prodotto naturale di alta qualità.<br>HOLZ PELLET è certificato in Classe ENplus A1 (la qualità più elevata), soddisfa ampiamente la norma 17225‐2 secondo lo standard europeo En Plus, il massimo della certificazione in termini di qualità e controllo continuo sul prodotto.</p>
             <img src="<?= $URLASSOLUTO ?>img/En_plus_IT_011.png" alt="">
             <p class="prodotto-proprieta"><span class="prodotto-nome-proprieta">Materia prima di origine</span><span class="prodotto-valore-proprieta">Pellet di legno ricavato da conifera e latifoglia decortecciata</span></p>
             <p class="prodotto-proprieta"><span class="prodotto-nome-proprieta">Classe diametrica</span><span class="prodotto-valore-proprieta">6 &plusmn; 1 mm</span></p>
@@ -41,7 +41,7 @@
                             PEPITO
                         </p>
                         <p class="mini-card-desc">
-                            Conifera e latifoglia,<br>Classe A1
+                            Conifera e latifoglia,<br>Classe ENplus A1
                         </p>
                     </div>
                 </div>
@@ -56,7 +56,7 @@
                             FIREX
                         </p>
                         <p class="mini-card-desc">
-                            Conifera e latifoglia,<br>Classe A1
+                            Conifera e latifoglia,<br>Classe ENplus A1
                         </p>
                     </div>
                 </div>
@@ -71,7 +71,22 @@
                             EUROPELLET
                         </p>
                         <p class="mini-card-desc">
-                            Conifera e latifoglia,<br>Classe A1
+                            Conifera e latifoglia,<br>Classe ENplus A1
+                        </p>
+                    </div>
+                </div>
+            </a>
+            <a href="<?= $URLASSOLUTO ?>schede-prodotti/ekowood.html">
+                <div class="mini-card">
+                    <div class="mini-card-img">
+                        <img src="<?= $URLASSOLUTO ?>img/Ekowood.jpg" alt="Ekowood">
+                    </div>
+                    <div class="mini-card-text">
+                        <p class="mini-card-title">
+                            EKOWOOD
+                        </p>
+                        <p class="mini-card-desc">
+                            Conifera e latifoglia,<br>Classe ENplus A1
                         </p>
                     </div>
                 </div>
@@ -86,7 +101,7 @@
                             PELLET SFUSO
                         </p>
                         <p class="mini-card-desc">
-                            Conifera e latifoglia,<br>Classe A1
+                            Conifera e latifoglia,<br>Classe ENplus A1
                         </p>
                     </div>
                 </div>

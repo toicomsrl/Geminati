@@ -1021,7 +1021,7 @@ section {
 }
 
 .card-pellet {
-	background: url("..");
+	background: url("../img/pellet-geminati.jpg");
 	background-repeat: no-repeat;
 	background-position: center center;
 }
@@ -1217,7 +1217,7 @@ section {
 }
 
 .prodotto-download {
-	margin-top: 20px;
+	margin-top: 50px;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -1230,8 +1230,8 @@ section {
 
 @media screen and (max-width: 900px) {
 	.prodotto-download {
-		justify-content: center;
-		gap: 0;
+		justify-content: flex-start;
+		gap: 25px;
 		margin-bottom: 50px;
 	}
 
