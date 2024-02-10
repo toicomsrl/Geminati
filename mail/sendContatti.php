@@ -1,11 +1,10 @@
 <?php
-require_once "blacklist.php";
 error_reporting(E_ERROR);
 
 if (strstr($_SERVER["HTTP_REFERER"], "geminati.it") && $_POST != "") {
 
 	//Gestione blacklist
-	$blacklist = new blacklist();
+	$blacklistDomains = ['registry.godaddy'];
 
 	//Recupero la secret key per il recaptcha dall'environment
 	$env = parse_ini_file('../.env');
@@ -15,6 +14,7 @@ if (strstr($_SERVER["HTTP_REFERER"], "geminati.it") && $_POST != "") {
 	$Azienda = $_POST['Azienda'];
 	$Comune = $_POST['Comune'];
 	$Email = $_POST['Email'];
+	$Messaggio = $_POST['Messaggio'];
 	$Provenienza = $_SERVER["HTTP_REFERER"];
 	$Honeypot = $_POST['honeypot'];
 
@@ -32,13 +32,13 @@ if (strstr($_SERVER["HTTP_REFERER"], "geminati.it") && $_POST != "") {
 			"@",
 			$Email
 		)[1];
-		if ($blacklist->isDomainInBlacklist($domain)) {
+
+		if (in_array($domain, $blacklistDomains)) {
 			header("location: ../contatti-ko.html#ko") or die;
 		}
 	}
 
 	$responseCaptcha = json_decode(file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret=' . $recaptchaSecret . '&response=' . $reCaptchaId));
-
 
 	if ($Azienda == "" || $Comune == "" || $Email == "" || $Honeypot != "" || $responseCaptcha->success == false) {
 		header("location: ../contatti-ko.html#ko") or die;
@@ -47,7 +47,6 @@ if (strstr($_SERVER["HTTP_REFERER"], "geminati.it") && $_POST != "") {
 		// Creazione mail 
 		$contenuto_file_log = "Email del " . date("j-m-Y h.i", time()) . ".\n";
 		$contenuto_file_log .= "------------------------------------------------\n\n";
-		$contenuto_file_log .= "Oggetto: " . $oggetto . "\n\n";
 		$contenuto_file_log .= "Azienda: " . $Azienda . "\n\n";
 		$contenuto_file_log .= "Comune: " . $Comune . "\n";
 		$contenuto_file_log .= "Pagina di provenienza: " . $Provenienza . "\n\n";

@@ -31,10 +31,11 @@
         <div class="box-img">
             <div class="box-terzo box-img__text">
                 <p class="titolo-sezione">Contattaci</p>
-                <form id="contatti" accept-charset="utf-8" method="post" action="<?= $URLASSOLUTO ?>/mail/sendContatti.php" id="formContatti">
+                <form id="contatti" accept-charset="utf-8" method="post" action="<?= $URLASSOLUTO ?>mail/sendContatti.php" id="formContatti">
                     <input type="text" placeholder="Azienda" name="Azienda" value="" class="inputText_contatti inputText_contatti-bg-dark" required="required">
                     <input type="text" required="required" placeholder="Comune" name="Comune" value="" class="inputText_contatti inputText_contatti-bg-dark">
                     <input type="email" required="required" placeholder="Email" name="Email" value="" class="inputText_contatti inputText_contatti-bg-dark">
+                    <textarea type="text" required="required" placeholder="La tua richiesta" name="Messaggio" value="" class="inputText_contatti inputText_contatti-bg-dark"></textarea>
                     <!-- Honeypot -->
                     <div style="display:none;">
                         <input type="text" name="honeypot">

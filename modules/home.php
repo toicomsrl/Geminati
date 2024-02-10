@@ -53,7 +53,7 @@
                 <p>
                     Forniamo pellet di legno di alta qualità per le principali catene GDO in Italia e per tutte le aziende che cercano un partner affidabile, costante e preciso. Grazie alla nostra produzione diretta, e l’infrastruttura logistica siamo in grado di garantire il prodotto tutto l’anno.
                 </p>
-                <a href="<?= $URLASSOLUTO ?>prodotti.html" class=" btn">CATALOGO</a>
+                <a href="<?= $URLASSOLUTO ?>pellet.html" class=" btn">CATALOGO</a>
             </div>
 
             <div class="box-mezzo">
