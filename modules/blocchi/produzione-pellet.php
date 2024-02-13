@@ -22,7 +22,7 @@
             <a href="<?= $URLASSOLUTO ?>schede-prodotti/firex.html">
                 <div class="mini-card">
                     <div class="mini-card-img">
-                        <img src="<?= $URLASSOLUTO ?>img/firex.jpg" alt="Pepito">
+                        <img src="<?= $URLASSOLUTO ?>img/firex.jpg" alt="Firex">
                     </div>
                     <div class="mini-card-text">
                         <p class="mini-card-title">
@@ -34,22 +34,24 @@
                     </div>
                 </div>
             </a>
+            <a href="<?= $URLASSOLUTO ?>schede-prodotti/holzpellet.html">
+                <div class="mini-card">
+                    <div class="mini-card-img">
+                        <img src="<?= $URLASSOLUTO ?>img/Holzpellet-slider.png" alt="Holzpellet">
+                    </div>
+                    <div class="mini-card-text">
+                        <p class="mini-card-title">
+                            HOLZPELLET
+                        </p>
+                        <p class="mini-card-desc">
+                            Conifera e latifoglia,<br>certificato ENplus A1
+                        </p>
+                    </div>
+                </div>
+            </a>
             <div class="mini-card">
                 <div class="mini-card-img">
-                    <img src="<?= $URLASSOLUTO ?>img/Holzpellet.jpg" alt="Pepito">
-                </div>
-                <div class="mini-card-text">
-                    <p class="mini-card-title">
-                        HOLZPELLET
-                    </p>
-                    <p class="mini-card-desc">
-                        Conifera e latifoglia,<br>certificato ENplus A1
-                    </p>
-                </div>
-            </div>
-            <div class="mini-card">
-                <div class="mini-card-img">
-                    <img src="<?= $URLASSOLUTO ?>img/Europellet.jpg" alt="Pepito">
+                    <img src="<?= $URLASSOLUTO ?>img/Europellet.jpg" alt="Europellet">
                 </div>
                 <div class="mini-card-text">
                     <p class="mini-card-title">
@@ -75,7 +77,7 @@
             </div>
             <div class="mini-card">
                 <div class="mini-card-img">
-                    <img src="<?= $URLASSOLUTO ?>img/pellet-sfuso.jpg" alt="Pepito">
+                    <img src="<?= $URLASSOLUTO ?>img/pellet-sfuso.jpg" alt="Pellet Sfuso">
                 </div>
                 <div class="mini-card-text">
                     <p class="mini-card-title">

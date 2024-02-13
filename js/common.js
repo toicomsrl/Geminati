@@ -74,7 +74,7 @@ $(document).on("ready", function () {
 		infinite: true,
 		arrows: false,
 		autoplay: true,
-		autoplaySpeed: 3300,
+		autoplaySpeed: 6000,
 		pauseOnFocus: false,
 		pauseOnHover: false,
 		speed: 1500,

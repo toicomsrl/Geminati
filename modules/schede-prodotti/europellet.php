@@ -64,7 +64,7 @@
             <a href="<?= $URLASSOLUTO ?>schede-prodotti/holzpellet.html">
                 <div class="mini-card">
                     <div class="mini-card-img">
-                        <img src="<?= $URLASSOLUTO ?>img/Holzpellet.jpg" alt="Holzpellet">
+                        <img src="<?= $URLASSOLUTO ?>img/Holzpellet-slider.png" alt="Holzpellet">
                     </div>
                     <div class="mini-card-text">
                         <p class="mini-card-title">

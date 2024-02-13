@@ -6,7 +6,7 @@
         </div>
     </div>
 
-    <section class="bg-white">
+    <section class="bg-white" style="padding-bottom:0">
         <div class="contenitore">
             <div class="box-mezzo">
                 <h2 class="text-black text-bolder">
@@ -15,7 +15,7 @@
             </div>
             <div class="box-mezzo sect-catalogo__col-1">
                 <p>
-                    Il nostro approccio alla produzione è unico nel suo genere. Da oltre quarant'anni, ci impegniamo a lavorare in sinergia con la natura, senza mai abbattere alberi per la nostra produzione. Al contrario, ci concentriamo sul riciclo del legname già lavorato, come bancali usati e scarti di produzione dalle segherie. Questo ci consente di ottenere biomasse che vengono riutilizzate nella nostra produzione, generando prodotti eco-compatibili e sostenibili.
+                    Il nostro approccio alla produzione è unico nel suo genere. Da oltre quarant'anni, ci impegniamo a lavorare in sinergia con la natura, senza mai abbattere alberi per la nostra produzione. Al contrario, ci concentriamo sul riciclo del legname già lavorato, come gli scarti di produzione dalle segherie. Questo ci consente di ottenere biomasse che vengono riutilizzate nella nostra produzione, generando prodotti eco-compatibili e sostenibili.
                 </p>
                 <p>
                     Siamo fieri del nostro metodo produttivo e crediamo che sia la dimostrazione che è possibile avere un mondo migliore. Per questo motivo, investiamo costantemente nella ricerca e nell'innovazione per migliorare ulteriormente la sostenibilità dei nostri prodotti. Grazie alla nostra filosofia di produzione, siamo in grado di offrire ai nostri clienti prodotti di alta qualità che rispettano l'ambiente e che contribuiscono a chiudere il ciclo ecologico del nostro sistema lavorativo.
@@ -23,6 +23,11 @@
                 <p>
                     Scegliere i nostri prodotti significa fare una scelta consapevole e responsabile per il futuro del nostro pianeta.
                 </p>
+
+                <div class="box-best-performer">
+                    <img src=" img/Best-performer_geminati.jpg" alt="" width="100%">
+                </div>
+
             </div>
             <div class="pulizia"></div>
         </div>

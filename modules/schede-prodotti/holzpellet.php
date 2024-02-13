@@ -2,7 +2,7 @@
 <section class="first-section">
     <div class="contenitore">
         <div class="box-terzo box-img-prodotto">
-            <img src="<?= $URLASSOLUTO ?>img/Holzpellet.jpg" alt="">
+            <img src="<?= $URLASSOLUTO ?>img/Holzpellet-slider.png" alt="">
         </div>
         <div class="box-dueterzi box-desc-prodotto">
             <h1 class="text-black">Holz pellet</h1>
