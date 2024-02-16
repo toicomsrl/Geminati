@@ -46,8 +46,8 @@
                             <input type="checkbox" required="required" name="Privacy" value="Accettata" id="Privacy">
                             <a class="privacyacc" href="javascript:PopupCentrata()">Accettazione privacy</a>
                         </div>
-                        <div class="g-recaptcha" data-sitekey="<?= $recaptchaKey ?>" data-callback="enableBtn"></div>
-                        <input type="submit" value="Invia Richiesta" name="invia" id="invia" class="invia-form" disabled>
+
+                        <button class="g-recaptcha invia-form" data-sitekey="<?= $recaptchaKey ?>" data-callback="onSubmitFormContatti" data-action="submit">invia</button>
                     </form>
                     <p>
                         Tel. +39 030 9959721<br>

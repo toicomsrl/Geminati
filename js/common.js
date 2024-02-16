@@ -233,7 +233,6 @@ function scrollFunction() {
 				})
 
 				const hasSubMenuElement = document.querySelectorAll(".subm")
-				console.log(hasSubMenuElement)
 				hasSubMenuElement.forEach((element) => {
 					element.classList.remove("black")
 					element.classList.add("white")
@@ -273,4 +272,8 @@ function isMobileScreenSize() {
 	if (window.innerWidth <= 800) return true
 
 	return false
+}
+
+function onSubmitFormContatti(token) {
+	document.getElementById("contatti").submit()
 }

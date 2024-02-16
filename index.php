@@ -167,7 +167,7 @@ include_once("dati-seo.php");
         }, 6000);
     </script>
     <!-- Google recaptcha -->
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
 </body>
 
 </html>

@@ -4,7 +4,7 @@ error_reporting(E_ERROR);
 if (strstr($_SERVER["HTTP_REFERER"], "geminati.it") && $_POST != "") {
 
 	//Gestione blacklist
-	$blacklistDomains = ['registry.godaddy'];
+	$blacklistDomains = ['registry.godaddy', 'shirulo.com',];
 
 	//Recupero la secret key per il recaptcha dall'environment
 	$env = parse_ini_file('../.env');
@@ -40,7 +40,7 @@ if (strstr($_SERVER["HTTP_REFERER"], "geminati.it") && $_POST != "") {
 
 	$responseCaptcha = json_decode(file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret=' . $recaptchaSecret . '&response=' . $reCaptchaId));
 
-	if ($Azienda == "" || $Comune == "" || $Email == "" || $Honeypot != "" || $responseCaptcha->success == false) {
+	if ($Azienda == "" || $Comune == "" || $Email == "" || $Honeypot != "" || $responseCaptcha->success == false || $responseCaptcha->score < 0.6) {
 		header("location: ../contatti-ko.html#ko") or die;
 	} else {
 
@@ -61,7 +61,6 @@ if (strstr($_SERVER["HTTP_REFERER"], "geminati.it") && $_POST != "") {
 		$invia = mail('info@geminati.it', $oggetto, $contenuto_file_log, $intestazioni);
 		$invia = mail('cservice@toicom.it', $oggetto, $contenuto_file_log, $intestazioni);
 	}
-
 
 	if ($invia == true) {
 
