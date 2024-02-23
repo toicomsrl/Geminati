@@ -93,7 +93,45 @@ include_once("dati-seo.php");
     <meta property="og:site_name" content="GAMINATI" />
     <meta property="og:image" content="<?= $URLASSOLUTO ?>img/slide-home-mobile.jpg" />
 
-
+    <!-- IUBENDA -->
+    <script type="text/javascript">
+        var _iub = _iub || [];
+        _iub.csConfiguration = {
+            "askConsentAtCookiePolicyUpdate": true,
+            "countryDetection": true,
+            "enableFadp": true,
+            "enableLgpd": true,
+            "enableUspr": true,
+            "floatingPreferencesButtonDisplay": "anchored-center-left",
+            "perPurposeConsent": true,
+            "siteId": 3508287,
+            "whitelabel": false,
+            "cookiePolicyId": 17757045,
+            "lang": "it",
+            "banner": {
+                "acceptButtonDisplay": true,
+                "backgroundColor": "#F5F3EF",
+                "brandBackgroundColor": "#FFFFFF",
+                "brandTextColor": "#000000",
+                "closeButtonDisplay": false,
+                "continueWithoutAcceptingButtonDisplay": true,
+                "customizeButtonColor": "#428118",
+                "customizeButtonDisplay": true,
+                "explicitWithdrawal": true,
+                "listPurposes": true,
+                "logo": "https://www.geminati.it/img/Geminati-logo.png",
+                "linksColor": "#428118",
+                "position": "float-bottom-right",
+                "rejectButtonDisplay": true,
+                "showPurposesToggles": true,
+                "textColor": "#000000"
+            }
+        };
+    </script>
+    <script type="text/javascript" src="https://cs.iubenda.com/autoblocking/3508287.js"></script>
+    <script type="text/javascript" src="//cdn.iubenda.com/cs/gpp/stub.js"></script>
+    <script type="text/javascript" src="//cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script>
+    <!-- END IUBENDA -->
 
     <link rel="icon" href="<?= $URLASSOLUTO ?>favicon.png" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="<?= $URLASSOLUTO ?>css/slick.css">
